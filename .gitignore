@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Build output
+dist/
+build/
+.vite/
+coverage/
+
+# Runtime caches (M3 audio cache lives in .cache/audio)
+.cache/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Python (if a module uses it)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Claude Code: personal, per-teammate files
+CLAUDE.local.md
+.claude/settings.local.json
