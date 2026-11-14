@@ -1,0 +1,53 @@
+{
+  "style": "Baroque",
+  "confidence": 0.9,
+  "details": [
+    {
+      "id": "det_1",
+      "label": "Baroque Portal",
+      "type": "architectural_element",
+      "bbox": [
+        0.42,
+        0.74,
+        0.16,
+        0.24
+      ],
+      "raw_text": null,
+      "translated_text": null
+    },
+    {
+      "id": "det_2",
+      "label": "Window Pediment",
+      "type": "architectural_element",
+      "bbox": [
+        0.14,
+        0.34,
+        0.12,
+        0.06
+      ],
+      "raw_text": null,
+      "translated_text": null
+    },
+    {
+      "id": "det_3",
+      "label": "Museum Plaque",
+      "type": "plaque",
+      "bbox": [
+        0.62,
+        0.78,
+        0.12,
+        0.06
+      ],
+      "raw_text": "MUZEUL NAȚIONAL DE ARTĂ",
+      "translated_text": "National Museum of Art"
+    }
+  ],
+  "narration": {
+    "text": "This is the Baroque Palace on Piața Unirii, today home to the National Museum of Art. Notice the rhythm of tall windows and the decorated portal, typical of the Baroque public buildings of eighteenth-century Habsburg Timișoara.",
+    "audio_url": "",
+    "duration_s": 14.4,
+    "building_name": "Palatul Baroc",
+    "history": "After 1716 the Habsburg administration rebuilt Timișoara in stone, and palaces like this one framed the new Baroque squares.",
+    "why_it_matters": "It is a key part of the Baroque ensemble of Piața Unirii."
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "style": "Secession",
+  "confidence": 0.86,
+  "details": [
+    {
+      "id": "det_1",
+      "label": "Decorative Roofline",
+      "type": "architectural_element",
+      "bbox": [
+        0.14,
+        0.02,
+        0.72,
+        0.14
+      ],
+      "raw_text": null,
+      "translated_text": null
+    },
+    {
+      "id": "det_2",
+      "label": "Arched Entrance",
+      "type": "architectural_element",
+      "bbox": [
+        0.38,
+        0.66,
+        0.24,
+        0.32
+      ],
+      "raw_text": null,
+      "translated_text": null
+    },
+    {
+      "id": "det_3",
+      "label": "Name Inscription",
+      "type": "inscription",
+      "bbox": [
+        0.34,
+        0.56,
+        0.32,
+        0.06
+      ],
+      "raw_text": "NEPTUN FÜRDŐ",
+      "translated_text": "Baia Neptun"
+    }
+  ],
+  "narration": {
+    "text": "Aceasta este Baia Neptun din cartierul Fabric, proiectată de László Székely și deschisă în anii dinaintea Primului Război Mondial. Priviți acoperișul și detaliile decorative, o interpretare jucăușă, în stil Secession, a unei clădiri de băi publice.",
+    "audio_url": "",
+    "duration_s": 14.4,
+    "building_name": "Baia Neptun",
+    "history": "Fabric s-a dezvoltat ca un cartier industrial și comercial de-a lungul Begăi, iar orașul a investit în dotări publice moderne la începutul anilor 1900.",
+    "why_it_matters": "Baia arată că stilul Secession a fost folosit nu doar pentru locuințe și palate, ci și pentru clădiri publice de zi cu zi."
+  }
+}

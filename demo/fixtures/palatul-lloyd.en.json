@@ -1,0 +1,66 @@
+{
+  "style": "Eclectic",
+  "confidence": 0.82,
+  "details": [
+    {
+      "id": "det_1",
+      "label": "Corner Dome",
+      "type": "architectural_element",
+      "bbox": [
+        0.62,
+        0.02,
+        0.26,
+        0.14
+      ],
+      "raw_text": null,
+      "translated_text": null
+    },
+    {
+      "id": "det_2",
+      "label": "Carved Mask (Mascaron)",
+      "type": "mask",
+      "bbox": [
+        0.44,
+        0.3,
+        0.12,
+        0.1
+      ],
+      "raw_text": null,
+      "translated_text": null
+    },
+    {
+      "id": "det_3",
+      "label": "Wrought-Iron Balcony",
+      "type": "architectural_element",
+      "bbox": [
+        0.3,
+        0.46,
+        0.4,
+        0.06
+      ],
+      "raw_text": null,
+      "translated_text": null
+    },
+    {
+      "id": "det_4",
+      "label": "Dated Inscription",
+      "type": "inscription",
+      "bbox": [
+        0.36,
+        0.2,
+        0.28,
+        0.05
+      ],
+      "raw_text": "ÉPÜLT 1912",
+      "translated_text": "Built in 1912"
+    }
+  ],
+  "narration": {
+    "text": "This is the Lloyd Palace on Piața Victoriei, built between 1910 and 1912 to designs by Lipót Baumhorn. Its facade mixes historic forms with Secession ornament, a typical Eclectic blend that signalled the city's commercial ambitions.",
+    "audio_url": "",
+    "duration_s": 14.4,
+    "building_name": "Palatul Lloyd",
+    "history": "Piața Victoriei took shape in the early twentieth century, after the old fortress walls came down, and its palaces were built within a few years of each other.",
+    "why_it_matters": "The Lloyd Palace is a landmark of Piața Victoriei, the city's main promenade."
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "error": {
+    "code": "LOW_CONFIDENCE",
+    "message": "Style confidence 0.41 is below the 0.55 threshold."
+  }
+}

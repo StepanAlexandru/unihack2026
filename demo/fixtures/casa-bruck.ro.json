@@ -1,0 +1,53 @@
+{
+  "style": "Secession",
+  "confidence": 0.89,
+  "details": [
+    {
+      "id": "det_1",
+      "label": "Floral Secession Ornament",
+      "type": "architectural_element",
+      "bbox": [
+        0.3,
+        0.16,
+        0.4,
+        0.1
+      ],
+      "raw_text": null,
+      "translated_text": null
+    },
+    {
+      "id": "det_2",
+      "label": "Curved Gable",
+      "type": "architectural_element",
+      "bbox": [
+        0.36,
+        0.04,
+        0.28,
+        0.1
+      ],
+      "raw_text": null,
+      "translated_text": null
+    },
+    {
+      "id": "det_3",
+      "label": "Dated Inscription",
+      "type": "inscription",
+      "bbox": [
+        0.38,
+        0.28,
+        0.24,
+        0.05
+      ],
+      "raw_text": "ÉPÜLT 1910",
+      "translated_text": "Construit în 1910"
+    }
+  ],
+  "narration": {
+    "text": "Priviți Casa Brück din Piața Unirii, proiectată de László Székely în jurul anului 1910. Observați liniile curbe și ornamentele vegetale: arhitecții Secession le foloseau pentru a da noilor clădiri ale Timișoarei o personalitate îndrăzneață și modernă.",
+    "audio_url": "",
+    "duration_s": 14.4,
+    "building_name": "Casa Brück",
+    "history": "La începutul anilor 1900, Timișoara s-a extins rapid, iar clădiri Secession precum aceasta au transformat piețele vechiului cartier Cetate.",
+    "why_it_matters": "Casa Brück este una dintre cele mai cunoscute fațade Secession din centrul istoric al Timișoarei."
+  }
+}

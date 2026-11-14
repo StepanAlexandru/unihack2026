@@ -1,0 +1,6 @@
+{
+  "error": {
+    "code": "TIMEOUT",
+    "message": "Vision analysis exceeded its 15000 ms budget."
+  }
+}

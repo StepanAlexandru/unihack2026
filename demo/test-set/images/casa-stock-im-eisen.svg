@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 640" width="480" height="640">
+<title>Casa cu Trunchiul de Fier (Stock im Eisen) · Cetate · expected: Eclectic</title>
+<rect x="0" y="0" width="480" height="40.6" fill="rgb(150,196,235)"/>
+<rect x="0" y="40" width="480" height="40.6" fill="rgb(154,198,236)"/>
+<rect x="0" y="80" width="480" height="40.6" fill="rgb(159,201,236)"/>
+<rect x="0" y="120" width="480" height="40.6" fill="rgb(163,203,237)"/>
+<rect x="0" y="160" width="480" height="40.6" fill="rgb(167,206,238)"/>
+<rect x="0" y="200" width="480" height="40.6" fill="rgb(171,208,239)"/>
+<rect x="0" y="240" width="480" height="40.6" fill="rgb(176,210,239)"/>
+<rect x="0" y="280" width="480" height="40.6" fill="rgb(180,213,240)"/>
+<rect x="0" y="320" width="480" height="40.6" fill="rgb(184,215,241)"/>
+<rect x="0" y="360" width="480" height="40.6" fill="rgb(188,218,242)"/>
+<rect x="0" y="400" width="480" height="40.6" fill="rgb(193,220,242)"/>
+<rect x="0" y="440" width="480" height="40.6" fill="rgb(197,222,243)"/>
+<rect x="0" y="480" width="480" height="40.6" fill="rgb(201,225,244)"/>
+<rect x="0" y="520" width="480" height="40.6" fill="rgb(205,227,245)"/>
+<rect x="0" y="560" width="480" height="40.6" fill="rgb(210,230,245)"/>
+<rect x="0" y="600" width="480" height="40.6" fill="rgb(214,232,246)"/>
+<rect x="28.8" y="64" width="422.4" height="576" fill="rgb(214,168,148)"/>
+<rect x="24" y="64" width="432" height="12.8" fill="rgb(235,220,200)"/>
+<rect x="28.8" y="435.2" width="422.4" height="7.7" fill="rgb(235,220,200)"/>
+<rect x="84.1" y="118.4" width="68.6" height="64" fill="rgb(70,96,120)"/>
+<rect x="205.7" y="118.4" width="68.6" height="64" fill="rgb(70,96,120)"/>
+<rect x="327.3" y="118.4" width="68.6" height="64" fill="rgb(52,58,70)"/>
+<rect x="84.1" y="225.1" width="68.6" height="64" fill="rgb(70,96,120)"/>
+<rect x="205.7" y="225.1" width="68.6" height="64" fill="rgb(70,96,120)"/>
+<rect x="327.3" y="225.1" width="68.6" height="64" fill="rgb(70,96,120)"/>
+<rect x="84.1" y="331.7" width="68.6" height="64" fill="rgb(70,96,120)"/>
+<rect x="205.7" y="331.7" width="68.6" height="64" fill="rgb(70,96,120)"/>
+<rect x="327.3" y="331.7" width="68.6" height="64" fill="rgb(70,96,120)"/>
+<rect x="28.8" y="620.8" width="422.4" height="19.2" fill="rgb(120,116,110)"/>
+<polygon points="62.4,384 86.4,448 62.4,512 38.4,448" fill="rgb(170,50,40)"/>
+<ellipse cx="62.4" cy="448" rx="7.2" ry="19.2" fill="rgb(240,200,90)"/>
+<rect x="96" y="409.6" width="57.6" height="38.4" fill="rgb(52,58,70)"/>
+<rect x="99.5" y="414.2" width="50.7" height="29.2" fill="rgb(40,80,150)"/>
+<g><rect x="38.4" y="384" width="48" height="128" fill="none" stroke="#ff2d55" stroke-width="2" stroke-dasharray="6 3"/><text x="40.4" y="380" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#ff2d55" stroke="#fff" stroke-width="3" paint-order="stroke">det_1 · guild_symbol · Nail-Studded Trunk (Stock im Eisen)</text></g>
+<g><rect x="96" y="409.6" width="57.6" height="38.4" fill="none" stroke="#ff2d55" stroke-width="2" stroke-dasharray="6 3"/><text x="98" y="405.6" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#ff2d55" stroke="#fff" stroke-width="3" paint-order="stroke">det_2 · plaque · Information Plaque: “STOCK IM EISEN”</text></g>
+<rect x="0" y="614" width="480" height="26" fill="rgba(0,0,0,0.6)"/><text x="8" y="631" font-family="system-ui,sans-serif" font-size="12" fill="#fff">Casa cu Trunchiul de Fier (Stock im Eisen) · Cetate · expected: Eclectic</text>
+</svg>

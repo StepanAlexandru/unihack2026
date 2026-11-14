@@ -1,0 +1,53 @@
+{
+  "style": "Eclectic",
+  "confidence": 0.84,
+  "details": [
+    {
+      "id": "det_1",
+      "label": "Central Dome",
+      "type": "architectural_element",
+      "bbox": [
+        0.34,
+        0.02,
+        0.32,
+        0.16
+      ],
+      "raw_text": null,
+      "translated_text": null
+    },
+    {
+      "id": "det_2",
+      "label": "Moorish Horseshoe Arches",
+      "type": "architectural_element",
+      "bbox": [
+        0.16,
+        0.44,
+        0.68,
+        0.14
+      ],
+      "raw_text": null,
+      "translated_text": null
+    },
+    {
+      "id": "det_3",
+      "label": "Rose Window",
+      "type": "architectural_element",
+      "bbox": [
+        0.42,
+        0.24,
+        0.16,
+        0.12
+      ],
+      "raw_text": null,
+      "translated_text": null
+    }
+  ],
+  "narration": {
+    "text": "This is the Fabric Synagogue, completed in 1899 to designs by Lipót Baumhorn. Its facade combines Moorish-inspired arches and decoration with historic European forms, a typical Eclectic mix that was popular at the end of the nineteenth century.",
+    "audio_url": "",
+    "duration_s": 15.2,
+    "building_name": "Sinagoga din Fabric",
+    "history": "Baumhorn designed many synagogues across the former Kingdom of Hungary, and this one served the Jewish community of the Fabric district.",
+    "why_it_matters": "It is a major landmark of Fabric and of Timișoara's multicultural heritage."
+  }
+}

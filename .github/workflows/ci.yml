@@ -1,0 +1,30 @@
+# Owner: M4. Runs the backend contract suite + checks generated demo assets are up to date.
+# Other modules may add their own job here via M4.
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: backend/package-lock.json
+      - run: npm ci
+      - name: Contract tests (mock mode, no API keys needed)
+        run: npm test
+        env:
+          VISION_MODE: mock
+          CONTENT_MODE: mock
+      - name: Demo fixtures + offline cache are regenerated and valid
+        run: npm run check:demo

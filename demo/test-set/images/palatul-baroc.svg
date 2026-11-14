@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 640" width="480" height="640">
+<title>Palatul Baroc · Cetate · expected: Baroque</title>
+<rect x="0" y="0" width="480" height="40.6" fill="rgb(150,196,235)"/>
+<rect x="0" y="40" width="480" height="40.6" fill="rgb(154,198,236)"/>
+<rect x="0" y="80" width="480" height="40.6" fill="rgb(159,201,236)"/>
+<rect x="0" y="120" width="480" height="40.6" fill="rgb(163,203,237)"/>
+<rect x="0" y="160" width="480" height="40.6" fill="rgb(167,206,238)"/>
+<rect x="0" y="200" width="480" height="40.6" fill="rgb(171,208,239)"/>
+<rect x="0" y="240" width="480" height="40.6" fill="rgb(176,210,239)"/>
+<rect x="0" y="280" width="480" height="40.6" fill="rgb(180,213,240)"/>
+<rect x="0" y="320" width="480" height="40.6" fill="rgb(184,215,241)"/>
+<rect x="0" y="360" width="480" height="40.6" fill="rgb(188,218,242)"/>
+<rect x="0" y="400" width="480" height="40.6" fill="rgb(193,220,242)"/>
+<rect x="0" y="440" width="480" height="40.6" fill="rgb(197,222,243)"/>
+<rect x="0" y="480" width="480" height="40.6" fill="rgb(201,225,244)"/>
+<rect x="0" y="520" width="480" height="40.6" fill="rgb(205,227,245)"/>
+<rect x="0" y="560" width="480" height="40.6" fill="rgb(210,230,245)"/>
+<rect x="0" y="600" width="480" height="40.6" fill="rgb(214,232,246)"/>
+<rect x="28.8" y="64" width="422.4" height="576" fill="rgb(226,189,118)"/>
+<rect x="24" y="64" width="432" height="12.8" fill="rgb(150,110,60)"/>
+<rect x="28.8" y="435.2" width="422.4" height="7.7" fill="rgb(150,110,60)"/>
+<rect x="84.1" y="114.4" width="68.6" height="48" fill="rgb(70,96,120)"/>
+<rect x="81.7" y="108.8" width="73.4" height="7.7" fill="rgb(150,110,60)"/>
+<rect x="205.7" y="114.4" width="68.6" height="48" fill="rgb(70,96,120)"/>
+<rect x="203.3" y="108.8" width="73.4" height="7.7" fill="rgb(150,110,60)"/>
+<rect x="327.3" y="114.4" width="68.6" height="48" fill="rgb(70,96,120)"/>
+<rect x="324.9" y="108.8" width="73.4" height="7.7" fill="rgb(150,110,60)"/>
+<rect x="84.1" y="194.4" width="68.6" height="48" fill="rgb(70,96,120)"/>
+<rect x="81.7" y="188.8" width="73.4" height="7.7" fill="rgb(150,110,60)"/>
+<rect x="205.7" y="194.4" width="68.6" height="48" fill="rgb(70,96,120)"/>
+<rect x="203.3" y="188.8" width="73.4" height="7.7" fill="rgb(150,110,60)"/>
+<rect x="327.3" y="194.4" width="68.6" height="48" fill="rgb(52,58,70)"/>
+<rect x="324.9" y="188.8" width="73.4" height="7.7" fill="rgb(150,110,60)"/>
+<rect x="84.1" y="274.4" width="68.6" height="48" fill="rgb(70,96,120)"/>
+<rect x="81.7" y="268.8" width="73.4" height="7.7" fill="rgb(150,110,60)"/>
+<rect x="205.7" y="274.4" width="68.6" height="48" fill="rgb(70,96,120)"/>
+<rect x="203.3" y="268.8" width="73.4" height="7.7" fill="rgb(150,110,60)"/>
+<rect x="327.3" y="274.4" width="68.6" height="48" fill="rgb(52,58,70)"/>
+<rect x="324.9" y="268.8" width="73.4" height="7.7" fill="rgb(150,110,60)"/>
+<rect x="84.1" y="354.4" width="68.6" height="48" fill="rgb(52,58,70)"/>
+<rect x="81.7" y="348.8" width="73.4" height="7.7" fill="rgb(150,110,60)"/>
+<rect x="205.7" y="354.4" width="68.6" height="48" fill="rgb(70,96,120)"/>
+<rect x="203.3" y="348.8" width="73.4" height="7.7" fill="rgb(150,110,60)"/>
+<rect x="327.3" y="354.4" width="68.6" height="48" fill="rgb(70,96,120)"/>
+<rect x="324.9" y="348.8" width="73.4" height="7.7" fill="rgb(150,110,60)"/>
+<rect x="28.8" y="620.8" width="422.4" height="19.2" fill="rgb(120,116,110)"/>
+<rect x="201.6" y="473.6" width="76.8" height="153.6" fill="rgb(150,110,60)"/>
+<rect x="213.1" y="527.4" width="53.8" height="99.8" fill="rgb(52,58,70)"/>
+<ellipse cx="240" cy="527.4" rx="26.9" ry="35.3" fill="rgb(52,58,70)"/>
+<polygon points="67.2,256 96,217.6 124.8,256" fill="rgb(150,110,60)"/>
+<polygon points="75.8,252.2 96,225.3 116.2,252.2" fill="rgb(246,240,224)"/>
+<rect x="297.6" y="499.2" width="57.6" height="38.4" fill="rgb(52,58,70)"/>
+<rect x="301.1" y="503.8" width="50.7" height="29.2" fill="rgb(40,80,150)"/>
+<g><rect x="201.6" y="473.6" width="76.8" height="153.6" fill="none" stroke="#ff2d55" stroke-width="2" stroke-dasharray="6 3"/><text x="203.6" y="469.6" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#ff2d55" stroke="#fff" stroke-width="3" paint-order="stroke">det_1 · architectural_element · Baroque Portal</text></g>
+<g><rect x="67.2" y="217.6" width="57.6" height="38.4" fill="none" stroke="#ff2d55" stroke-width="2" stroke-dasharray="6 3"/><text x="69.2" y="213.6" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#ff2d55" stroke="#fff" stroke-width="3" paint-order="stroke">det_2 · architectural_element · Window Pediment</text></g>
+<g><rect x="297.6" y="499.2" width="57.6" height="38.4" fill="none" stroke="#ff2d55" stroke-width="2" stroke-dasharray="6 3"/><text x="299.6" y="495.2" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#ff2d55" stroke="#fff" stroke-width="3" paint-order="stroke">det_3 · plaque · Museum Plaque: “MUZEUL NAȚIONAL DE ARTĂ”</text></g>
+<rect x="0" y="614" width="480" height="26" fill="rgba(0,0,0,0.6)"/><text x="8" y="631" font-family="system-ui,sans-serif" font-size="12" fill="#fff">Palatul Baroc · Cetate · expected: Baroque</text>
+</svg>

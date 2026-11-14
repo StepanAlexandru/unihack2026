@@ -1,4 +1,4 @@
-# API & Module Contracts: v1.0.0 (FROZEN)
+# API & Module Contracts: v1.1.0 (FROZEN)
 
 > **Status:** FROZEN as of 2026-11-14. **Owner:** Module 4.
 > This file is the single source of truth for every payload that crosses a module boundary. If code and this file disagree, the code is wrong.
@@ -391,6 +391,8 @@ Every non-2xx response body from every endpoint is an `ErrorResponse`:
 **Rules:**
 - `message` is English, safe to log, and never contains API keys, prompts, or stack traces. M1 shows its own localized copy chosen by `code`, not `message`.
 - M1 MUST treat a network failure, a non-JSON body, or an unknown `code` as `TIMEOUT`.
+- *v1.1.0:* M4 rate-limits `POST /analyze` and `/narrate` per IP (`RATE_LIMIT_PER_MIN`). Over the limit it returns HTTP `429` with `code: "TIMEOUT"`, so no new code is needed and M1's "tap to retry" UX applies. M1 should branch on `code`, not on the HTTP status.
+- Unknown routes and missing audio files return `404` with `code: "INVALID_INPUT"`.
 
 ---
 
@@ -415,12 +417,53 @@ Served with `Content-Type: audio/mpeg`. File names must match `/^[A-Za-z0-9_-]+\
 
 `vision_mode` and `content_mode` are `"mock" | "live"` and mirror `VISION_MODE` / `CONTENT_MODE`.
 
+*Added in v1.1.0 (optional, informational; tolerant readers may ignore them):*
+
+```json
+{
+  "ok": true, "vision_mode": "live", "content_mode": "live",
+  "mode": "live",
+  "vision_active": "live", "content_active": "stub",
+  "offline_demo_mode": false, "offline_cache_entries": 6, "fixtures": 11,
+  "contract_version": "1.1.0", "uptime_s": 42
+}
+```
+
+- `mode`: `"live"` (both modules really live) | `"stub"` (at least one built-in stub) | `"offline_fallback"` (`OFFLINE_DEMO_MODE` on: no AI calls).
+- `vision_active` / `content_active`: what actually runs. Differs from `*_mode` when live was requested but the module failed to load.
+
 ### 9.3 Demo fixtures (`demo_fixture_id`)
 
 - `demo_fixture_id: "<id>"` → M4 reads `demo/fixtures/<id>.<lang>.json`, falling back to `demo/fixtures/<id>.json`. If neither exists: `400 INVALID_INPUT`.
 - A fixture file contains **either** an `AnalyzeResponse` (returned with `200`) **or** an `ErrorResponse` (returned with the status from §8), so the error screens can be demoed too.
 - The fixture's `narration.audio_url` is `""`, a data URL, or `/audio/demo/<file>.mp3`.
 - Fixtures are returned verbatim with **no AI calls**, so they work offline. This is the on-stage safety net: keep it working at all times.
+- *v1.1.0:* the request header `x-demo-fixture: <id>` is equivalent to `demo_fixture_id` (the body field wins if both are set).
+
+### 9.4 `GET /demo/fixtures` *(v1.1.0)*
+
+Lists what the demo can show, so M1 can build a hidden "demo picker" without hard-coding ids.
+
+```json
+{
+  "fixtures": [
+    { "id": "casa-bruck", "langs": ["en", "ro"], "kind": "success", "style": "Secession", "building_name": "Casa Brück", "error_code": null },
+    { "id": "error-no-match", "langs": ["en", "ro"], "kind": "error", "style": null, "building_name": null, "error_code": "NO_MATCH" }
+  ],
+  "offline_cache": [
+    { "fixture_id": "casa-bruck", "building_name": "Casa Brück", "style": "Secession", "image": "test-set/images/casa-bruck.jpg" }
+  ]
+}
+```
+
+### 9.5 Offline fallback *(v1.1.0, M4-internal; no payload changes)*
+
+M4 may answer `POST /analyze` from pre-recorded responses in `demo/offline-cache.json` (same `AnalyzeResponse` shape, `200`), but **only for images that match a known demo image** (exact sha256, or an unambiguous perceptual-hash match):
+
+- `OFFLINE_DEMO_MODE=true`: no AI calls. Known image → cached response; unknown image → `422 NO_MATCH` (or `OFFLINE_DEMO_DEFAULT_FIXTURE` if set).
+- Live mode: a known image answers from the cache if the live pipeline takes longer than `OFFLINE_FALLBACK_AFTER_MS` or fails with a 5xx. Unknown images keep the normal §8 errors. A live `NO_MATCH` / `LOW_CONFIDENCE` is never replaced.
+- `POST /narrate` in offline mode returns the cached narration when `style` + detail labels match a cached response, otherwise a generic, fact-free narration for that style in `lang` (`audio_url: ""`).
+- `POST /demo/offline` `{ "enabled": true|false }` with header `x-demo-admin-token` flips offline mode at runtime. It returns `404` unless `DEMO_ADMIN_TOKEN` is set.
 
 ---
 
@@ -438,3 +481,4 @@ Served with `Content-Type: audio/mpeg`. File names must match `/^[A-Za-z0-9_-]+\
 | Version | Date | Change |
 |---|---|---|
 | 1.0.0 | 2026-11-14 | Initial frozen contract. |
+| 1.1.0 | 2026-11-14 | **Additive only, no consumer changes required.** Optional `/health` fields (§9.2); `x-demo-fixture` header alias (§9.3); `GET /demo/fixtures` (§9.4); M4 offline fallback + `POST /demo/offline` (§9.5); `429` rate limit with `code: "TIMEOUT"` and `404` bodies documented (§8). |

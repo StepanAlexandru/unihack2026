@@ -1,0 +1,66 @@
+{
+  "style": "Baroque",
+  "confidence": 0.93,
+  "details": [
+    {
+      "id": "det_1",
+      "label": "Twin Bell Towers",
+      "type": "architectural_element",
+      "bbox": [
+        0.1,
+        0.02,
+        0.8,
+        0.22
+      ],
+      "raw_text": null,
+      "translated_text": null
+    },
+    {
+      "id": "det_2",
+      "label": "Statue Niche",
+      "type": "architectural_element",
+      "bbox": [
+        0.44,
+        0.36,
+        0.12,
+        0.16
+      ],
+      "raw_text": null,
+      "translated_text": null
+    },
+    {
+      "id": "det_3",
+      "label": "Main Portal",
+      "type": "architectural_element",
+      "bbox": [
+        0.4,
+        0.72,
+        0.2,
+        0.26
+      ],
+      "raw_text": null,
+      "translated_text": null
+    },
+    {
+      "id": "det_4",
+      "label": "Latin Date Inscription",
+      "type": "inscription",
+      "bbox": [
+        0.38,
+        0.62,
+        0.24,
+        0.05
+      ],
+      "raw_text": "ANNO 1774",
+      "translated_text": "In the year 1774"
+    }
+  ],
+  "narration": {
+    "text": "This is the Roman Catholic Cathedral of Saint George on Piața Unirii, built between 1736 and 1774. Its Baroque facade, with paired towers, pilasters and sculpted niches, was designed to impress worshippers and inspire a sense of awe.",
+    "audio_url": "",
+    "duration_s": 15.2,
+    "building_name": "Domul Romano-Catolic Sfântul Gheorghe",
+    "history": "The cathedral was built in the decades after Habsburg forces took Timișoara in 1716, when the city was rebuilt as a Baroque fortress town.",
+    "why_it_matters": "It is one of the most important Baroque churches in the region and a symbol of Piața Unirii."
+  }
+}

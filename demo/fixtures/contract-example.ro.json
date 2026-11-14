@@ -1,0 +1,40 @@
+{
+  "style": "Secession",
+  "confidence": 0.87,
+  "details": [
+    {
+      "id": "det_1",
+      "label": "Secession Mask (Mascaron)",
+      "type": "mask",
+      "bbox": [
+        0.32,
+        0.18,
+        0.14,
+        0.16
+      ],
+      "raw_text": null,
+      "translated_text": null
+    },
+    {
+      "id": "det_2",
+      "label": "Dated Inscription",
+      "type": "inscription",
+      "bbox": [
+        0.4,
+        0.62,
+        0.22,
+        0.06
+      ],
+      "raw_text": "ANNO 1910",
+      "translated_text": "În anul 1910"
+    }
+  ],
+  "narration": {
+    "text": "Această fațadă aparține stilului Secession, care a transformat Timișoara la începutul secolului al douăzecilea. Căutați masca sculptată de deasupra ferestrei: arhitecții Secession foloseau chipuri și motive vegetale curgătoare pentru a da clădirilor personalitate și mândrie civică.",
+    "audio_url": "",
+    "duration_s": 14.4,
+    "building_name": null,
+    "history": "La începutul anilor 1900, când Timișoara a crescut dincolo de zidurile vechii cetăți, multe clădiri noi de locuințe au adoptat stilul Secession, popular în întreaga Austro-Ungarie.",
+    "why_it_matters": "Fațadele Secession sunt o parte definitorie a identității arhitecturale a Timișoarei."
+  }
+}
