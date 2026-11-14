@@ -1,0 +1,2630 @@
+{
+  "version": "1.0.0",
+  "notes": "Grounding source for M3 narration. Every factual claim (date, architect, owner, event) that narration may speak must live in this file. Sources are listed per entry; 'confidence' marks entries whose dates differ between sources: only 'high' facts are spoken, 'medium' facts appear only in the details drawer text that already hedges them.",
+  "city": {
+    "names": {
+      "ro": "Timișoara",
+      "hu": "Temesvár",
+      "de": "Temeswar",
+      "sr": "Темишвар"
+    },
+    "facts": {
+      "en": [
+        "Habsburg troops under Prince Eugene of Savoy took the Timișoara fortress from the Ottomans in 1716.",
+        "In 1884 Timișoara became one of the first European cities with electric street lighting.",
+        "The 1989 Romanian Revolution began in Timișoara in December 1989.",
+        "Timișoara was a European Capital of Culture in 2023.",
+        "The city is often nicknamed Little Vienna."
+      ],
+      "ro": [
+        "Trupele habsburgice conduse de prințul Eugeniu de Savoia au cucerit cetatea Timișoarei de la otomani în 1716.",
+        "În 1884, Timișoara a devenit unul dintre primele orașe europene cu iluminat public electric.",
+        "Revoluția Română din 1989 a început la Timișoara, în decembrie 1989.",
+        "Timișoara a fost Capitală Europeană a Culturii în 2023.",
+        "Orașul este adesea numit Mica Vienă."
+      ]
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Timi%C8%99oara",
+      "https://en.wikipedia.org/wiki/Timi%C8%99oara_Fortress"
+    ]
+  },
+  "districts": [
+    {
+      "id": "cetate",
+      "name": {
+        "ro": "Cetate",
+        "en": "Cetate (the old fortress)"
+      },
+      "keywords": [
+        "cetate",
+        "belvarosi",
+        "innere stadt",
+        "fortress",
+        "cetatea"
+      ],
+      "facts": {
+        "en": "Cetate is the historic core inside the former Habsburg fortress, home to Union Square, Liberty Square and Victory Square.",
+        "ro": "Cetate este nucleul istoric din interiorul fostei cetăți habsburgice, cu Piața Unirii, Piața Libertății și Piața Victoriei."
+      }
+    },
+    {
+      "id": "fabric",
+      "name": {
+        "ro": "Fabric",
+        "en": "Fabric"
+      },
+      "keywords": [
+        "fabric",
+        "gyarvaros",
+        "fabrikstadt",
+        "piata romanilor",
+        "piata traian"
+      ],
+      "facts": {
+        "en": "Fabric grew east of the fortress as a district of craftsmen and workshops, and its name recalls its factories.",
+        "ro": "Fabric s-a dezvoltat la est de cetate ca un cartier de meșteșugari și ateliere, iar numele său amintește de fabrici."
+      }
+    },
+    {
+      "id": "iosefin",
+      "name": {
+        "ro": "Iosefin",
+        "en": "Iosefin"
+      },
+      "keywords": [
+        "iosefin",
+        "jozsefvaros",
+        "josefstadt"
+      ],
+      "facts": {
+        "en": "Iosefin, named after Emperor Joseph II, grew south-west of the old fortress.",
+        "ro": "Iosefin, numit după împăratul Iosif al II-lea, s-a dezvoltat la sud-vest de vechea cetate."
+      }
+    },
+    {
+      "id": "elisabetin",
+      "name": {
+        "ro": "Elisabetin",
+        "en": "Elisabetin"
+      },
+      "keywords": [
+        "elisabetin",
+        "erzsebetvaros",
+        "elisabethstadt"
+      ],
+      "facts": {
+        "en": "Elisabetin, named after Empress Elisabeth, lies between the old fortress and Iosefin and is rich in early twentieth-century houses.",
+        "ro": "Elisabetin, numit după împărăteasa Elisabeta, se află între vechea cetate și Iosefin și are multe case de la începutul secolului XX."
+      }
+    },
+    {
+      "id": "piata_unirii",
+      "name": {
+        "ro": "Piața Unirii",
+        "en": "Union Square (Piața Unirii)"
+      },
+      "parent": "cetate",
+      "keywords": [
+        "piata unirii",
+        "union square",
+        "unirii",
+        "domplatz",
+        "dom ter"
+      ],
+      "facts": {
+        "en": "Union Square is the Baroque heart of Timișoara, framed by the Roman Catholic and Serbian Orthodox cathedrals and the Baroque Palace.",
+        "ro": "Piața Unirii este inima barocă a Timișoarei, încadrată de catedralele romano-catolică și ortodoxă sârbă și de Palatul Baroc."
+      }
+    },
+    {
+      "id": "piata_victoriei",
+      "name": {
+        "ro": "Piața Victoriei",
+        "en": "Victory Square (Piața Victoriei)"
+      },
+      "parent": "cetate",
+      "keywords": [
+        "piata victoriei",
+        "victory square",
+        "victoriei",
+        "opera square",
+        "piata operei"
+      ],
+      "facts": {
+        "en": "Victory Square links the National Theatre and Opera with the Metropolitan Cathedral and is lined with Secession palaces; in December 1989 it was the stage of the Revolution.",
+        "ro": "Piața Victoriei leagă Teatrul Național și Opera de Catedrala Mitropolitană și este mărginită de palate Secession; în decembrie 1989 a fost scena Revoluției."
+      }
+    }
+  ],
+  "architects": [
+    {
+      "id": "szekely",
+      "name": "László Székely",
+      "aliases": [
+        "szekely laszlo",
+        "laszlo szekely",
+        "szekely"
+      ],
+      "facts": {
+        "en": "László Székely was Timișoara's chief city architect from 1902 to 1922 and designed many of its Secession buildings.",
+        "ro": "László Székely a fost arhitectul-șef al Timișoarei între 1902 și 1922 și a proiectat multe dintre clădirile Secession ale orașului."
+      },
+      "sources": [
+        "https://en.wikipedia.org/wiki/Serbian_Orthodox_Episcopal_Palace_of_Timi%C8%99oara"
+      ]
+    },
+    {
+      "id": "baumhorn",
+      "name": "Lipót Baumhorn",
+      "aliases": [
+        "baumhorn lipot",
+        "lipot baumhorn",
+        "leopold baumhorn",
+        "baumhorn"
+      ],
+      "facts": {
+        "en": "Lipót Baumhorn designed the Lloyd Palace and the Water Palace in Timișoara.",
+        "ro": "Lipót Baumhorn a proiectat Palatul Lloyd și Palatul Apelor din Timișoara."
+      },
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lloyd_Palace",
+        "https://en.wikipedia.org/wiki/Water_Palace"
+      ]
+    },
+    {
+      "id": "gemeinhardt",
+      "name": "Martin Gemeinhardt",
+      "aliases": [
+        "gemeinhardt",
+        "martin gemeinhardt"
+      ],
+      "facts": {
+        "en": "Martin Gemeinhardt designed the House with Peacocks in Elisabetin.",
+        "ro": "Martin Gemeinhardt a proiectat Casa cu Păuni din Elisabetin."
+      },
+      "sources": [
+        "https://heritageoftimisoara.ro/buildings/Elisabetin/address/General+Henri+Berthelot/4"
+      ]
+    },
+    {
+      "id": "telkes",
+      "name": "Henrik Telkes",
+      "aliases": [
+        "telkes",
+        "henrik telkes",
+        "telkes henrik"
+      ],
+      "facts": {
+        "en": "Henrik Telkes designed the Miksa Róna apartment building on Piața Romanilor.",
+        "ro": "Henrik Telkes a proiectat imobilul Miksa Róna din Piața Romanilor."
+      },
+      "sources": [
+        "https://heritageoftimisoara.ro/Fabric/address/Romanilor/2"
+      ]
+    },
+    {
+      "id": "komor_jakab",
+      "name": "Marcell Komor & Dezső Jakab",
+      "aliases": [
+        "komor",
+        "jakab",
+        "komor marcell",
+        "jakab dezso"
+      ],
+      "facts": {
+        "en": "The Budapest partners Marcell Komor and Dezső Jakab designed the Miksa Steiner Palace on Union Square.",
+        "ro": "Partenerii budapestani Marcell Komor și Dezső Jakab au proiectat Palatul Miksa Steiner din Piața Unirii."
+      },
+      "sources": [
+        "https://heritageoftimisoara.ro/buildings/Cetate/address/Gheorghe+Laz%C4%83r/1"
+      ]
+    }
+  ],
+  "styles": {
+    "Secession": {
+      "names": {
+        "en": "Secession (Art Nouveau)",
+        "ro": "Secession (Art Nouveau)"
+      },
+      "aliases": [
+        "secession",
+        "secesiune",
+        "art nouveau",
+        "szecesszio",
+        "jugendstil",
+        "hungarian secession"
+      ],
+      "period": {
+        "en": "about 1900 to 1914",
+        "ro": "aproximativ 1900–1914"
+      },
+      "history": {
+        "en": "Between about 1900 and 1914, as Timișoara grew beyond its old fortress walls, banks, merchants and families commissioned apartment palaces in the Secession style popular across Austria-Hungary. By the end of that decade the Hungarian variant of Secession dominated the city, led by chief city architect László Székely.",
+        "ro": "Între aproximativ 1900 și 1914, pe măsură ce Timișoara creștea dincolo de zidurile vechii cetăți, bănci, negustori și familii au comandat palate de locuințe în stilul Secession, la modă în toată Austro-Ungaria. Spre sfârșitul acelui deceniu, varianta maghiară a Secessionului a dominat orașul, condusă de arhitectul-șef László Székely."
+      },
+      "why_it_matters": {
+        "en": "Secession facades are a defining part of Timișoara's architectural identity and one of the richest Art Nouveau ensembles in Romania.",
+        "ro": "Fațadele Secession sunt o parte definitorie a identității arhitecturale a Timișoarei și unul dintre cele mai bogate ansambluri Art Nouveau din România."
+      },
+      "narration": {
+        "en": {
+          "leads": [
+            "This facade speaks the language of the Secession, the Art Nouveau style that transformed Timișoara between about 1900 and 1914.",
+            "You are looking at Secession architecture, the Austro-Hungarian Art Nouveau that reshaped Timișoara in the early twentieth century.",
+            "This facade is Secession, the Art Nouveau that transformed Timișoara after 1900."
+          ],
+          "facts": [
+            "Curving lines, plant motifs and decorated gables replaced the strict symmetry of older styles.",
+            "Many such palaces combined shops at street level with apartments above.",
+            "Chief city architect László Székely designed many Secession buildings here."
+          ],
+          "closers": [
+            "That is why Timișoara is often called Little Vienna.",
+            "Look up: the best details are often near the roofline."
+          ]
+        },
+        "ro": {
+          "leads": [
+            "Această fațadă vorbește limbajul Secessionului, stilul Art Nouveau care a transformat Timișoara între aproximativ 1900 și 1914.",
+            "Priviți o clădire Secession, varianta austro-ungară a stilului Art Nouveau, care a remodelat Timișoara la începutul secolului XX.",
+            "Această fațadă este Secession, stilul Art Nouveau care a transformat Timișoara după 1900."
+          ],
+          "facts": [
+            "Liniile curbe, motivele vegetale și frontoanele decorate au înlocuit simetria strictă a stilurilor mai vechi.",
+            "Multe astfel de palate aveau magazine la parter și apartamente la etaj.",
+            "Arhitectul-șef László Székely a proiectat aici multe clădiri Secession."
+          ],
+          "closers": [
+            "De aceea Timișoara este adesea numită Mica Vienă.",
+            "Priviți în sus: cele mai frumoase detalii sunt aproape de acoperiș."
+          ]
+        }
+      }
+    },
+    "Baroque": {
+      "names": {
+        "en": "Baroque",
+        "ro": "Baroc"
+      },
+      "aliases": [
+        "baroque",
+        "baroc",
+        "barokk",
+        "barock",
+        "austrian baroque"
+      ],
+      "period": {
+        "en": "the eighteenth century",
+        "ro": "secolul al XVIII-lea"
+      },
+      "history": {
+        "en": "After Habsburg troops took Timișoara from the Ottomans in 1716, the city was rebuilt as a fortified Habsburg town. Its new churches, palaces and squares, above all Union Square, were built in the Austrian Baroque style.",
+        "ro": "După ce trupele habsburgice au cucerit Timișoara de la otomani în 1716, orașul a fost reconstruit ca o cetate habsburgică. Noile biserici, palate și piețe, mai ales Piața Unirii, au fost ridicate în stilul baroc austriac."
+      },
+      "why_it_matters": {
+        "en": "Baroque buildings are the oldest layer of the city you can still walk through, and they record Timișoara's rebirth as a Central European city.",
+        "ro": "Clădirile baroce sunt cel mai vechi strat al orașului prin care încă se poate trece și păstrează memoria renașterii Timișoarei ca oraș central-european."
+      },
+      "narration": {
+        "en": {
+          "leads": [
+            "This is Austrian Baroque, the style in which Timișoara was rebuilt after Habsburg troops took the city from the Ottomans in 1716.",
+            "You are looking at Baroque architecture, the oldest layer of Timișoara's Habsburg-era city centre.",
+            "This is Austrian Baroque, the style of Timișoara rebuilt after 1716."
+          ],
+          "facts": [
+            "Baroque builders loved symmetry, heavy cornices, pilasters and richly framed portals.",
+            "Union Square is the Baroque heart of the city.",
+            "Facades like this one were meant to project order, faith and imperial power."
+          ],
+          "closers": [
+            "Stand back and notice how calm and balanced it feels.",
+            "Notice the strict symmetry of the facade."
+          ]
+        },
+        "ro": {
+          "leads": [
+            "Acesta este barocul austriac, stilul în care Timișoara a fost reconstruită după ce trupele habsburgice au cucerit orașul de la otomani în 1716.",
+            "Priviți o clădire barocă, cel mai vechi strat al centrului habsburgic al Timișoarei.",
+            "Acesta este barocul austriac, stilul Timișoarei reconstruite după 1716."
+          ],
+          "facts": [
+            "Constructorii baroci iubeau simetria, cornișele masive, pilaștrii și portalurile bogat încadrate.",
+            "Piața Unirii este inima barocă a orașului.",
+            "Fațadele ca aceasta trebuiau să exprime ordine, credință și putere imperială."
+          ],
+          "closers": [
+            "Faceți un pas înapoi și observați cât de calmă și echilibrată pare.",
+            "Observați simetria strictă a fațadei."
+          ]
+        }
+      }
+    },
+    "Eclectic": {
+      "names": {
+        "en": "Eclecticism (Historicism)",
+        "ro": "Eclectism (Istorism)"
+      },
+      "aliases": [
+        "eclectic",
+        "eclectism",
+        "historicism",
+        "istorism",
+        "historismus",
+        "neo renaissance",
+        "neo baroque",
+        "neo gothic"
+      ],
+      "period": {
+        "en": "the second half of the nineteenth century",
+        "ro": "a doua jumătate a secolului al XIX-lea"
+      },
+      "history": {
+        "en": "In the second half of the nineteenth century Timișoara modernised quickly, and in 1884 it became one of the first European cities with electric street lighting. New public buildings and apartment houses mixed Renaissance, Baroque and Gothic forms in the Eclectic, or Historicist, manner.",
+        "ro": "În a doua jumătate a secolului al XIX-lea, Timișoara s-a modernizat rapid, iar în 1884 a devenit unul dintre primele orașe europene cu iluminat public electric. Noile clădiri publice și case de raport au combinat forme renascentiste, baroce și gotice, în maniera eclectică sau istoristă."
+      },
+      "why_it_matters": {
+        "en": "Eclectic facades show the confidence of a fast-growing nineteenth-century city that borrowed from every era of European architecture.",
+        "ro": "Fațadele eclectice arată încrederea unui oraș în plină creștere în secolul al XIX-lea, care a împrumutat din toate epocile arhitecturii europene."
+      },
+      "narration": {
+        "en": {
+          "leads": [
+            "This facade is Eclectic, or Historicist: nineteenth-century architects freely combined Renaissance, Baroque and Gothic forms.",
+            "You are looking at Eclectic architecture from the decades when Timișoara modernised fastest.",
+            "This facade is Eclectic, mixing historical styles in nineteenth-century fashion."
+          ],
+          "facts": [
+            "In 1884 Timișoara became one of the first European cities with electric street lighting.",
+            "Columns, balustrades and ornate window frames were chosen like items from a catalogue.",
+            "The style signalled wealth, education and a link to the great capitals of Europe."
+          ],
+          "closers": [
+            "Try to spot which historical style each detail borrows.",
+            "It is a whole history of European architecture on one wall."
+          ]
+        },
+        "ro": {
+          "leads": [
+            "Această fațadă este eclectică, sau istoristă: arhitecții secolului al XIX-lea combinau liber forme renascentiste, baroce și gotice.",
+            "Priviți o clădire eclectică, din deceniile în care Timișoara s-a modernizat cel mai rapid.",
+            "Această fațadă este eclectică, amestecând stiluri istorice, ca în secolul al XIX-lea."
+          ],
+          "facts": [
+            "În 1884, Timișoara a devenit unul dintre primele orașe europene cu iluminat public electric.",
+            "Coloanele, balustradele și ramele bogate ale ferestrelor erau alese ca dintr-un catalog.",
+            "Stilul semnala bogăție, educație și legătura cu marile capitale ale Europei."
+          ],
+          "closers": [
+            "Încercați să ghiciți din ce stil istoric provine fiecare detaliu.",
+            "Este o întreagă istorie a arhitecturii europene pe un singur zid."
+          ]
+        }
+      }
+    },
+    "Neoclassical": {
+      "names": {
+        "en": "Neoclassicism",
+        "ro": "Neoclasicism"
+      },
+      "aliases": [
+        "neoclassical",
+        "neoclasic",
+        "neoclasicism",
+        "klassizismus",
+        "classicism",
+        "klasszicista"
+      ],
+      "period": {
+        "en": "the late eighteenth and the nineteenth century",
+        "ro": "sfârșitul secolului al XVIII-lea și secolul al XIX-lea"
+      },
+      "history": {
+        "en": "Neoclassicism revived the columns, pediments and strict proportions of ancient Greece and Rome. In Habsburg Timișoara it followed the Baroque and suited public and commercial buildings that wanted to look solid and rational.",
+        "ro": "Neoclasicismul a readus coloanele, frontoanele și proporțiile stricte ale Greciei și Romei antice. În Timișoara habsburgică a urmat barocului și s-a potrivit clădirilor publice și comerciale care voiau să pară solide și raționale."
+      },
+      "why_it_matters": {
+        "en": "Neoclassical facades show how Timișoara looked to antiquity for an image of order, reason and civic dignity.",
+        "ro": "Fațadele neoclasice arată cum Timișoara a căutat în antichitate o imagine a ordinii, rațiunii și demnității civice."
+      },
+      "narration": {
+        "en": {
+          "leads": [
+            "This facade is Neoclassical, a style that revived the columns, pediments and strict proportions of ancient Greece and Rome.",
+            "You are looking at Neoclassical architecture, calm and symmetrical, inspired by classical antiquity.",
+            "This facade is Neoclassical, inspired by ancient Greece and Rome."
+          ],
+          "facts": [
+            "Ornament is restrained here, and proportion does most of the work.",
+            "In Habsburg Timișoara the style followed the Baroque.",
+            "Public and commercial buildings used it to look solid, rational and trustworthy."
+          ],
+          "closers": [
+            "Notice the rhythm of the windows and the clean lines.",
+            "Simplicity was the point."
+          ]
+        },
+        "ro": {
+          "leads": [
+            "Această fațadă este neoclasică, un stil care a readus coloanele, frontoanele și proporțiile stricte ale Greciei și Romei antice.",
+            "Priviți o clădire neoclasică, calmă și simetrică, inspirată din antichitatea clasică.",
+            "Această fațadă este neoclasică, inspirată din Grecia și Roma antică."
+          ],
+          "facts": [
+            "Ornamentul este reținut aici, iar proporțiile spun aproape totul.",
+            "În Timișoara habsburgică, stilul a urmat barocului.",
+            "Clădirile publice și comerciale îl foloseau ca să pară solide, raționale și demne de încredere."
+          ],
+          "closers": [
+            "Observați ritmul ferestrelor și liniile curate.",
+            "Simplitatea era chiar scopul."
+          ]
+        }
+      }
+    },
+    "Brutalist": {
+      "names": {
+        "en": "Socialist Brutalism",
+        "ro": "Brutalism socialist"
+      },
+      "aliases": [
+        "brutalist",
+        "brutalism",
+        "brutalist socialist",
+        "socialist modernism",
+        "communist",
+        "concrete"
+      ],
+      "period": {
+        "en": "the 1960s to the 1980s",
+        "ro": "anii 1960–1980"
+      },
+      "history": {
+        "en": "During the socialist period, Timișoara expanded with large housing districts and public buildings in exposed concrete. Prefabricated panels and repeated modules allowed fast construction for a growing industrial city.",
+        "ro": "În perioada socialistă, Timișoara s-a extins cu mari cartiere de locuințe și clădiri publice din beton aparent. Panourile prefabricate și modulele repetate au permis construcția rapidă pentru un oraș industrial în creștere."
+      },
+      "why_it_matters": {
+        "en": "Brutalist buildings are the most debated layer of the city and a direct record of everyday life under socialism.",
+        "ro": "Clădirile brutaliste sunt stratul cel mai discutat al orașului și o mărturie directă a vieții de zi cu zi în socialism."
+      },
+      "narration": {
+        "en": {
+          "leads": [
+            "This is Brutalist architecture from the socialist period, built from raw, exposed concrete and bold repeated forms.",
+            "You are looking at socialist-era Brutalism, the concrete architecture that expanded Timișoara in the late twentieth century.",
+            "This is socialist-era Brutalism, built from raw exposed concrete."
+          ],
+          "facts": [
+            "Prefabricated panels and repeated modules allowed fast construction.",
+            "Ornament was rejected; structure and material became the decoration.",
+            "Large housing districts grew around the historic centre in this period."
+          ],
+          "closers": [
+            "Love it or hate it, it is part of the city's story.",
+            "Look at how light and shadow shape the concrete."
+          ]
+        },
+        "ro": {
+          "leads": [
+            "Aceasta este arhitectură brutalistă din perioada socialistă, construită din beton aparent și forme îndrăznețe, repetate.",
+            "Priviți brutalismul epocii socialiste, arhitectura din beton care a extins Timișoara la sfârșitul secolului XX.",
+            "Acesta este brutalismul epocii socialiste, construit din beton aparent."
+          ],
+          "facts": [
+            "Panourile prefabricate și modulele repetate au permis o construcție rapidă.",
+            "Ornamentul a fost respins; structura și materialul au devenit decorul.",
+            "În această perioadă au crescut mari cartiere de locuințe în jurul centrului istoric."
+          ],
+          "closers": [
+            "Fie că vă place sau nu, face parte din povestea orașului.",
+            "Observați cum lumina și umbra modelează betonul."
+          ]
+        }
+      }
+    }
+  },
+  "context_styles": {
+    "Modernism": {
+      "note": "Interwar Modernism is NOT one of the 5 contract styles (docs/contracts.md §3). Kept as context only; never selected as a narration style.",
+      "names": {
+        "en": "Interwar Modernism",
+        "ro": "Modernism interbelic"
+      },
+      "history": {
+        "en": "After 1918 Timișoara became part of Romania. Between the wars, flat facades, horizontal windows and little ornament appeared alongside a national Romanian-Byzantine revival, seen in the Metropolitan Cathedral built from 1936 to 1946.",
+        "ro": "După 1918, Timișoara a devenit parte a României. În perioada interbelică au apărut fațade plane, ferestre orizontale și puțin ornament, alături de un stil național româno-bizantin, vizibil la Catedrala Mitropolitană, construită între 1936 și 1946."
+      }
+    }
+  },
+  "buildings": [
+    {
+      "id": "casa_bruck",
+      "name": {
+        "en": "Brück House (Casa Brück)",
+        "ro": "Casa Brück"
+      },
+      "aliases": [
+        "casa bruck",
+        "bruck house",
+        "bruck",
+        "bruck haz",
+        "brueck"
+      ],
+      "district": "piata_unirii",
+      "styles": [
+        "Secession"
+      ],
+      "architect": "László Székely",
+      "confidence": "high",
+      "history": {
+        "en": "Brück House stands on the corner of Union Square and Florimund Mercy Street. It was built from 1910 to 1911 to plans by László Székely for the pharmacist Salamon Brück, who opened a pharmacy on the ground floor.",
+        "ro": "Casa Brück se află la colțul Pieței Unirii cu strada Florimund Mercy. A fost construită între 1910 și 1911 după planurile lui László Székely, pentru farmacistul Salamon Brück, care a deschis o farmacie la parter."
+      },
+      "why_it_matters": {
+        "en": "It is one of the most photographed Secession facades in Timișoara and shows how the new style entered the city's Baroque main square.",
+        "ro": "Este una dintre cele mai fotografiate fațade Secession din Timișoara și arată cum noul stil a intrat în piața barocă principală a orașului."
+      },
+      "narration": {
+        "en": {
+          "leads": [
+            "This is Brück House on Union Square, designed by László Székely for the pharmacist Salamon Brück and completed in 1911."
+          ],
+          "facts": [
+            "Brück opened a pharmacy on the ground floor.",
+            "Its Secession facade stands out among the Baroque buildings of the square."
+          ]
+        },
+        "ro": {
+          "leads": [
+            "Aceasta este Casa Brück din Piața Unirii, proiectată de László Székely pentru farmacistul Salamon Brück și terminată în 1911."
+          ],
+          "facts": [
+            "Brück a deschis o farmacie la parter.",
+            "Fațada sa Secession iese în evidență printre clădirile baroce ale pieței."
+          ]
+        }
+      },
+      "sources": [
+        "https://heritageoftimisoara.ro/en/buildings/Cetate/address/Florimund+Mercy/9",
+        "https://en.wikipedia.org/wiki/Br%C3%BCck_House"
+      ]
+    },
+    {
+      "id": "palatul_steiner",
+      "name": {
+        "en": "Miksa Steiner Palace",
+        "ro": "Palatul Miksa Steiner"
+      },
+      "aliases": [
+        "miksa steiner",
+        "steiner palace",
+        "palatul steiner",
+        "steiner",
+        "banca de scont",
+        "discount bank",
+        "gingerbread house",
+        "casa turta dulce"
+      ],
+      "district": "piata_unirii",
+      "styles": [
+        "Secession"
+      ],
+      "architect": "Marcell Komor & Dezső Jakab",
+      "confidence": "high",
+      "history": {
+        "en": "The Miksa Steiner Palace stands on the south-west corner of Union Square. It was completed in 1909 to designs by the Budapest architects Marcell Komor and Dezső Jakab, and it later housed the Discount Bank.",
+        "ro": "Palatul Miksa Steiner se află în colțul de sud-vest al Pieței Unirii. A fost terminat în 1909 după proiectul arhitecților budapestani Marcell Komor și Dezső Jakab, iar mai târziu a găzduit Banca de Scont."
+      },
+      "why_it_matters": {
+        "en": "Its playful ornament earned it the nickname Gingerbread House, and it is a showcase of Hungarian Secession in the Baroque old town.",
+        "ro": "Ornamentația sa jucăușă i-a adus porecla de Casa de Turtă Dulce și este o vitrină a Secessionului maghiar în orașul vechi baroc."
+      },
+      "narration": {
+        "en": {
+          "leads": [
+            "This is the Miksa Steiner Palace on Union Square, completed in 1909 to designs by Marcell Komor and Dezső Jakab."
+          ],
+          "facts": [
+            "Locals nicknamed it the Gingerbread House.",
+            "It later housed the Discount Bank."
+          ]
+        },
+        "ro": {
+          "leads": [
+            "Acesta este Palatul Miksa Steiner din Piața Unirii, terminat în 1909 după proiectul lui Marcell Komor și Dezső Jakab."
+          ],
+          "facts": [
+            "Localnicii l-au poreclit Casa de Turtă Dulce.",
+            "Mai târziu a găzduit Banca de Scont."
+          ]
+        }
+      },
+      "sources": [
+        "https://heritageoftimisoara.ro/buildings/Cetate/address/Gheorghe+Laz%C4%83r/1",
+        "https://en.wikipedia.org/wiki/Steiner_Palace"
+      ]
+    },
+    {
+      "id": "vicariatul_sarbesc",
+      "name": {
+        "en": "Serbian Orthodox Episcopal Palace (Serbian Vicarage)",
+        "ro": "Palatul Episcopal Ortodox Sârb (Vicariatul Sârbesc)"
+      },
+      "aliases": [
+        "vicariatul sarbesc",
+        "serbian vicarage",
+        "episcopia sarba",
+        "serbian episcopal palace",
+        "palatul episcopal sarb",
+        "srpska episkopija",
+        "letic"
+      ],
+      "district": "piata_unirii",
+      "styles": [
+        "Secession",
+        "Baroque",
+        "Eclectic"
+      ],
+      "architect": "László Székely",
+      "confidence": "high",
+      "history": {
+        "en": "The Serbian Orthodox Episcopal Palace on Union Square dates from the eighteenth century. In 1905 and 1906 its facades were remodelled to a design by László Székely, sponsored by Bishop Georgije Letić.",
+        "ro": "Palatul Episcopal Ortodox Sârb din Piața Unirii datează din secolul al XVIII-lea. În 1905 și 1906, fațadele sale au fost refăcute după proiectul lui László Székely, cu sprijinul episcopului Georgije Letić."
+      },
+      "why_it_matters": {
+        "en": "Together with the Serbian Orthodox Cathedral beside it, it recalls the long presence of the Serbian community in Timișoara.",
+        "ro": "Împreună cu Catedrala Ortodoxă Sârbă de alături, amintește de prezența îndelungată a comunității sârbe în Timișoara."
+      },
+      "narration": {
+        "en": {
+          "leads": [
+            "This is the Serbian Orthodox Episcopal Palace on Union Square, whose facades László Székely remodelled in 1905 and 1906."
+          ],
+          "facts": [
+            "The remodelling was sponsored by Bishop Georgije Letić.",
+            "It stands beside the Serbian Orthodox Cathedral."
+          ]
+        },
+        "ro": {
+          "leads": [
+            "Acesta este Palatul Episcopal Ortodox Sârb din Piața Unirii, cu fațade refăcute de László Székely în 1905 și 1906."
+          ],
+          "facts": [
+            "Lucrările au fost sprijinite de episcopul Georgije Letić.",
+            "Se află lângă Catedrala Ortodoxă Sârbă."
+          ]
+        }
+      },
+      "sources": [
+        "https://en.wikipedia.org/wiki/Serbian_Orthodox_Episcopal_Palace_of_Timi%C8%99oara",
+        "https://heritageoftimisoara.ro/buildings/Cetate/address/Unirii/4"
+      ]
+    },
+    {
+      "id": "palatul_lloyd",
+      "name": {
+        "en": "Lloyd Palace",
+        "ro": "Palatul Lloyd"
+      },
+      "aliases": [
+        "palatul lloyd",
+        "lloyd palace",
+        "lloyd",
+        "lloyd palota"
+      ],
+      "district": "piata_victoriei",
+      "styles": [
+        "Secession",
+        "Eclectic"
+      ],
+      "architect": "Lipót Baumhorn",
+      "confidence": "high",
+      "history": {
+        "en": "The Lloyd Palace on Victory Square was built from 1910 to 1912 to plans by Lipót Baumhorn for the Lloyd Society, an association founded by Banat grain merchants. Today it houses the rectorate of the Politehnica University of Timișoara.",
+        "ro": "Palatul Lloyd din Piața Victoriei a fost construit între 1910 și 1912 după planurile lui Lipót Baumhorn, pentru Societatea Lloyd, o asociație fondată de comercianții de cereale din Banat. Astăzi găzduiește rectoratul Universității Politehnica Timișoara."
+      },
+      "why_it_matters": {
+        "en": "It recalls the grain trade that made the Banat rich and anchors the Secession ensemble of Victory Square.",
+        "ro": "Amintește de comerțul cu cereale care a îmbogățit Banatul și ancorează ansamblul Secession din Piața Victoriei."
+      },
+      "narration": {
+        "en": {
+          "leads": [
+            "This is the Lloyd Palace on Victory Square, built from 1910 to 1912 to plans by Lipót Baumhorn."
+          ],
+          "facts": [
+            "It was built for the Lloyd Society of Banat grain merchants.",
+            "Today it houses the rectorate of the Politehnica University."
+          ]
+        },
+        "ro": {
+          "leads": [
+            "Acesta este Palatul Lloyd din Piața Victoriei, construit între 1910 și 1912 după planurile lui Lipót Baumhorn."
+          ],
+          "facts": [
+            "A fost ridicat pentru Societatea Lloyd a comercianților de cereale din Banat.",
+            "Astăzi găzduiește rectoratul Universității Politehnica."
+          ]
+        }
+      },
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lloyd_Palace",
+        "https://heritageoftimisoara.ro/en/buildings/Cetate/address/Victoriei/2"
+      ]
+    },
+    {
+      "id": "palatul_apelor",
+      "name": {
+        "en": "Water Palace (Palatul Apelor)",
+        "ro": "Palatul Apelor"
+      },
+      "aliases": [
+        "palatul apelor",
+        "water palace",
+        "apelor",
+        "vizugyi palota"
+      ],
+      "district": "iosefin",
+      "styles": [
+        "Secession",
+        "Eclectic"
+      ],
+      "architect": "Lipót Baumhorn",
+      "confidence": "high",
+      "history": {
+        "en": "The Water Palace stands at the entrance from the city centre to the Iosefin district. It was built from 1900 to 1901 to designs by Lipót Baumhorn and reopened after a major refurbishment.",
+        "ro": "Palatul Apelor se află la intrarea dinspre centru în cartierul Iosefin. A fost construit între 1900 și 1901 după proiectul lui Lipót Baumhorn și a fost redeschis după o amplă renovare."
+      },
+      "why_it_matters": {
+        "en": "It marks the gateway to Iosefin and shows the early arrival of Secession forms in Timișoara.",
+        "ro": "Marchează poarta de intrare în Iosefin și arată sosirea timpurie a formelor Secession în Timișoara."
+      },
+      "narration": {
+        "en": {
+          "leads": [
+            "This is the Water Palace at the gateway to Iosefin, built from 1900 to 1901 to designs by Lipót Baumhorn."
+          ],
+          "facts": [
+            "It was recently restored and reopened.",
+            "It marks the entrance from the city centre to Iosefin."
+          ]
+        },
+        "ro": {
+          "leads": [
+            "Acesta este Palatul Apelor, la intrarea în Iosefin, construit între 1900 și 1901 după proiectul lui Lipót Baumhorn."
+          ],
+          "facts": [
+            "A fost restaurat și redeschis recent.",
+            "Marchează intrarea dinspre centru în Iosefin."
+          ]
+        }
+      },
+      "sources": [
+        "https://en.wikipedia.org/wiki/Water_Palace",
+        "https://www.romania-insider.com/water-palace-timisoara-reopens"
+      ]
+    },
+    {
+      "id": "casa_cu_pauni",
+      "name": {
+        "en": "House with Peacocks (Romulus Nicolin House)",
+        "ro": "Casa cu Păuni (Casa Romulus Nicolin)"
+      },
+      "aliases": [
+        "casa cu pauni",
+        "house with peacocks",
+        "peacock house",
+        "romulus nicolin",
+        "nicolin",
+        "pauni"
+      ],
+      "district": "elisabetin",
+      "styles": [
+        "Secession"
+      ],
+      "architect": "Martin Gemeinhardt",
+      "confidence": "high",
+      "history": {
+        "en": "The House with Peacocks in Elisabetin was completed in 1904 to designs by Martin Gemeinhardt for Romulus Nicolin, a well-known Timișoara barber, and was modified in 1910.",
+        "ro": "Casa cu Păuni din Elisabetin a fost terminată în 1904 după proiectul lui Martin Gemeinhardt, pentru Romulus Nicolin, un cunoscut bărbier din Timișoara, și a fost modificată în 1910."
+      },
+      "why_it_matters": {
+        "en": "Its peacock relief is a local icon, and the missing head of one peacock has become a symbol of the city's endangered heritage.",
+        "ro": "Relieful cu păuni este un simbol local, iar capul lipsă al unuia dintre păuni a devenit simbolul patrimoniului amenințat al orașului."
+      },
+      "narration": {
+        "en": {
+          "leads": [
+            "This is the House with Peacocks in Elisabetin, designed by Martin Gemeinhardt and completed in 1904 for the barber Romulus Nicolin."
+          ],
+          "facts": [
+            "One peacock has lost its head, a symbol of the city's endangered heritage.",
+            "Its peacock relief is a local icon."
+          ]
+        },
+        "ro": {
+          "leads": [
+            "Aceasta este Casa cu Păuni din Elisabetin, proiectată de Martin Gemeinhardt și terminată în 1904 pentru bărbierul Romulus Nicolin."
+          ],
+          "facts": [
+            "Un păun și-a pierdut capul, simbol al patrimoniului amenințat al orașului.",
+            "Relieful cu păuni este un simbol local."
+          ]
+        }
+      },
+      "sources": [
+        "https://heritageoftimisoara.ro/buildings/Elisabetin/address/General+Henri+Berthelot/4"
+      ]
+    },
+    {
+      "id": "palatul_rona",
+      "name": {
+        "en": "Miksa Róna Apartment Building",
+        "ro": "Imobilul Miksa Róna"
+      },
+      "aliases": [
+        "miksa rona",
+        "palatul rona",
+        "rona",
+        "kincs",
+        "arthur kincs",
+        "rona palace"
+      ],
+      "district": "fabric",
+      "styles": [
+        "Secession"
+      ],
+      "architect": "Henrik Telkes",
+      "confidence": "high",
+      "history": {
+        "en": "The Miksa Róna apartment building on Piața Romanilor in Fabric was completed in 1912 to designs by Henrik Telkes. Its first owner was the engineer Miksa Róna, and the permit of 1911 provided for 20 apartments.",
+        "ro": "Imobilul Miksa Róna din Piața Romanilor, în Fabric, a fost terminat în 1912 după proiectul lui Henrik Telkes. Primul proprietar a fost inginerul Miksa Róna, iar autorizația din 1911 prevedea 20 de apartamente."
+      },
+      "why_it_matters": {
+        "en": "It shows how Secession apartment palaces brought big-city living to Fabric's main square.",
+        "ro": "Arată cum palatele de locuințe Secession au adus viața de mare oraș în piața principală a Fabricului."
+      },
+      "narration": {
+        "en": {
+          "leads": [
+            "This is the Miksa Róna building on Piața Romanilor in Fabric, completed in 1912 to designs by Henrik Telkes."
+          ],
+          "facts": [
+            "Its first owner was the engineer Miksa Róna.",
+            "It was planned with 20 apartments."
+          ]
+        },
+        "ro": {
+          "leads": [
+            "Acesta este imobilul Miksa Róna din Piața Romanilor, în Fabric, terminat în 1912 după proiectul lui Henrik Telkes."
+          ],
+          "facts": [
+            "Primul proprietar a fost inginerul Miksa Róna.",
+            "A fost proiectat cu 20 de apartamente."
+          ]
+        }
+      },
+      "sources": [
+        "https://heritageoftimisoara.ro/Fabric/address/Romanilor/2"
+      ]
+    },
+    {
+      "id": "palatul_stefania",
+      "name": {
+        "en": "Ștefania Palace",
+        "ro": "Palatul Ștefania"
+      },
+      "aliases": [
+        "palatul stefania",
+        "stefania palace",
+        "stefania",
+        "stefania palota"
+      ],
+      "district": "fabric",
+      "styles": [
+        "Secession"
+      ],
+      "architect": "László Székely",
+      "confidence": "high",
+      "history": {
+        "en": "The Ștefania Palace on Piața Romanilor in Fabric was completed in 1909 to designs by László Székely.",
+        "ro": "Palatul Ștefania din Piața Romanilor, în Fabric, a fost terminat în 1909 după proiectul lui László Székely."
+      },
+      "why_it_matters": {
+        "en": "It is one of the Secession landmarks that give Fabric's main square its character.",
+        "ro": "Este unul dintre reperele Secession care dau caracter pieței principale din Fabric."
+      },
+      "narration": {
+        "en": {
+          "leads": [
+            "This is the Ștefania Palace on Piața Romanilor in Fabric, completed in 1909 to designs by László Székely."
+          ],
+          "facts": [
+            "It is one of the Secession landmarks of Fabric."
+          ]
+        },
+        "ro": {
+          "leads": [
+            "Acesta este Palatul Ștefania din Piața Romanilor, în Fabric, terminat în 1909 după proiectul lui László Székely."
+          ],
+          "facts": [
+            "Este unul dintre reperele Secession ale Fabricului."
+          ]
+        }
+      },
+      "sources": [
+        "https://heritageoftimisoara.ro/Fabric/address/Romanilor/1"
+      ]
+    },
+    {
+      "id": "casa_pomul_de_fier",
+      "name": {
+        "en": "House with the Iron Tree (Guild Tree)",
+        "ro": "Casa cu Pomul de Fier (Copacul Breslelor)"
+      },
+      "aliases": [
+        "pomul de fier",
+        "copacul breslelor",
+        "pomul breslelor",
+        "guild tree",
+        "iron tree",
+        "iron stump",
+        "stock im eisen",
+        "trunchiul cu cuie",
+        "nail tree",
+        "trandaphil"
+      ],
+      "district": "cetate",
+      "styles": [
+        "Baroque",
+        "Neoclassical",
+        "Eclectic"
+      ],
+      "architect": null,
+      "confidence": "high",
+      "history": {
+        "en": "The house on Proclamația de la Timișoara Street dates from 1752. The merchant Andreas Trandaphil, who owned it from 1827, had the craftsman Moritz Heim make an iron tree for its corner, inspired by iron trees he had seen on his travels. The original is now kept by the National Museum of Banat, and a replica stands on the corner.",
+        "ro": "Casa de pe strada Proclamația de la Timișoara datează din 1752. Negustorul Andreas Trandaphil, proprietar din 1827, i-a cerut meșterului Moritz Heim un pom de fier pentru colțul casei, inspirat de pomii de fier văzuți în călătoriile sale. Originalul se păstrează la Muzeul Național al Banatului, iar pe colț se află o replică."
+      },
+      "why_it_matters": {
+        "en": "Legend says journeymen craftsmen hammered a nail into the tree, like the Stock im Eisen in Vienna; historians see it as a house sign, but the legend keeps the city's guild memory alive.",
+        "ro": "Legenda spune că ucenicii meșteșugari băteau un cui în pom, ca la Stock im Eisen din Viena; istoricii îl văd ca pe o firmă a casei, dar legenda păstrează vie memoria breslelor."
+      },
+      "narration": {
+        "en": {
+          "leads": [
+            "This is the House with the Iron Tree, whose owner Andreas Trandaphil had the craftsman Moritz Heim forge an iron tree for its corner."
+          ],
+          "facts": [
+            "Legend says journeymen craftsmen hammered nails into it, like the Stock im Eisen in Vienna.",
+            "The original tree is kept by the National Museum of Banat."
+          ]
+        },
+        "ro": {
+          "leads": [
+            "Aceasta este Casa cu Pomul de Fier, al cărei proprietar, Andreas Trandaphil, i-a cerut meșterului Moritz Heim un pom de fier pentru colț."
+          ],
+          "facts": [
+            "Legenda spune că ucenicii meșteșugari băteau cuie în el, ca la Stock im Eisen din Viena.",
+            "Pomul original se păstrează la Muzeul Național al Banatului."
+          ]
+        }
+      },
+      "sources": [
+        "https://en.wikipedia.org/wiki/House_with_Guild_Tree",
+        "https://prinbanat.ro/en/the-iron-tree-house-from-timisoara/"
+      ]
+    },
+    {
+      "id": "palatul_baroc",
+      "name": {
+        "en": "Baroque Palace",
+        "ro": "Palatul Baroc"
+      },
+      "aliases": [
+        "palatul baroc",
+        "baroque palace",
+        "muzeul de arta",
+        "art museum",
+        "museum of art",
+        "prefectura veche"
+      ],
+      "district": "piata_unirii",
+      "styles": [
+        "Baroque"
+      ],
+      "architect": null,
+      "confidence": "medium",
+      "history": {
+        "en": "The Baroque Palace on Union Square was built in the eighteenth century and enlarged several times; sources disagree on the exact dates. It served as an administrative seat, and since 1984 it has housed the city's art museum, today the National Museum of Art Timișoara.",
+        "ro": "Palatul Baroc din Piața Unirii a fost construit în secolul al XVIII-lea și extins de mai multe ori; sursele nu sunt de acord asupra datelor exacte. A fost sediu administrativ, iar din 1984 găzduiește muzeul de artă al orașului, astăzi Muzeul Național de Artă Timișoara."
+      },
+      "why_it_matters": {
+        "en": "It is one of the grandest Baroque buildings of the city and now opens its halls to the public as an art museum.",
+        "ro": "Este una dintre cele mai impunătoare clădiri baroce ale orașului și își deschide astăzi sălile publicului ca muzeu de artă."
+      },
+      "narration": {
+        "en": {
+          "leads": [
+            "This is the Baroque Palace on Union Square, an eighteenth-century administrative seat that is now the National Museum of Art."
+          ],
+          "facts": [
+            "The art museum moved here in 1984.",
+            "It faces the Roman Catholic Cathedral across the square."
+          ]
+        },
+        "ro": {
+          "leads": [
+            "Acesta este Palatul Baroc din Piața Unirii, un sediu administrativ din secolul al XVIII-lea, astăzi Muzeul Național de Artă."
+          ],
+          "facts": [
+            "Muzeul de artă s-a mutat aici în 1984.",
+            "Se află în aceeași piață cu Catedrala Romano-Catolică."
+          ]
+        }
+      },
+      "sources": [
+        "https://en.wikipedia.org/wiki/Baroque_Palace,_Timi%C8%99oara",
+        "https://heritageoftimisoara.ro/en/buildings/Cetate/address/Unirii/1"
+      ]
+    },
+    {
+      "id": "domul_romano_catolic",
+      "name": {
+        "en": "St. George's Roman Catholic Cathedral (the Dome)",
+        "ro": "Domul Romano-Catolic Sfântul Gheorghe"
+      },
+      "aliases": [
+        "domul romano catolic",
+        "domul",
+        "dome",
+        "st george cathedral",
+        "sfantul gheorghe",
+        "catedrala romano catolica",
+        "roman catholic cathedral",
+        "dom"
+      ],
+      "district": "piata_unirii",
+      "styles": [
+        "Baroque"
+      ],
+      "architect": null,
+      "confidence": "high",
+      "history": {
+        "en": "St. George's Roman Catholic Cathedral on Union Square was built from 1736 to 1774. Its design is often attributed to the Viennese architect Joseph Emanuel Fischer von Erlach, but that attribution is not proven.",
+        "ro": "Catedrala Romano-Catolică Sfântul Gheorghe din Piața Unirii a fost construită între 1736 și 1774. Proiectul este adesea atribuit arhitectului vienez Joseph Emanuel Fischer von Erlach, dar atribuirea nu este dovedită."
+      },
+      "why_it_matters": {
+        "en": "It is the major Baroque church of the Banat and the backdrop of the city's most beautiful square.",
+        "ro": "Este principala biserică barocă a Banatului și fundalul celei mai frumoase piețe a orașului."
+      },
+      "narration": {
+        "en": {
+          "leads": [
+            "This is St. George's Roman Catholic Cathedral on Union Square, built over almost four decades, from 1736 to 1774."
+          ],
+          "facts": [
+            "It is the major Baroque church of the Banat.",
+            "Its twin towers frame the eastern side of the square."
+          ]
+        },
+        "ro": {
+          "leads": [
+            "Aceasta este Catedrala Romano-Catolică Sfântul Gheorghe din Piața Unirii, construită timp de aproape patru decenii, între 1736 și 1774."
+          ],
+          "facts": [
+            "Este principala biserică barocă a Banatului.",
+            "Turnurile sale gemene domină latura de est a pieței."
+          ]
+        }
+      },
+      "sources": [
+        "https://en.wikipedia.org/wiki/St._George_Cathedral,_Timi%C8%99oara",
+        "https://heritageoftimisoara.ro/en/buildings/Cetate/address/Unirii/12"
+      ]
+    },
+    {
+      "id": "coloana_ciumei",
+      "name": {
+        "en": "Holy Trinity Monument (Plague Column)",
+        "ro": "Monumentul Sfintei Treimi (Coloana Ciumei)"
+      },
+      "aliases": [
+        "sfanta treime",
+        "holy trinity",
+        "plague column",
+        "coloana ciumei",
+        "monumentul ciumei",
+        "pestsaule",
+        "dreifaltigkeitssaule"
+      ],
+      "district": "piata_unirii",
+      "styles": [
+        "Baroque"
+      ],
+      "architect": null,
+      "confidence": "high",
+      "history": {
+        "en": "The Holy Trinity Monument in the centre of Union Square dates from 1740 and commemorates the plague epidemic of 1738 to 1739.",
+        "ro": "Monumentul Sfintei Treimi din centrul Pieței Unirii datează din 1740 și comemorează epidemia de ciumă din 1738–1739."
+      },
+      "why_it_matters": {
+        "en": "Plague columns were raised across the Habsburg lands in gratitude for the end of an epidemic; this one is a centrepiece of Baroque Timișoara.",
+        "ro": "Coloanele ciumei au fost ridicate în toate ținuturile habsburgice în semn de mulțumire pentru sfârșitul unei epidemii; aceasta este piesa centrală a Timișoarei baroce."
+      },
+      "narration": {
+        "en": {
+          "leads": [
+            "This is the Holy Trinity Monument on Union Square, raised in 1740 after the plague epidemic of 1738 and 1739."
+          ],
+          "facts": [
+            "Such plague columns thanked heaven for the end of an epidemic."
+          ]
+        },
+        "ro": {
+          "leads": [
+            "Acesta este Monumentul Sfintei Treimi din Piața Unirii, ridicat în 1740 după epidemia de ciumă din 1738 și 1739."
+          ],
+          "facts": [
+            "Astfel de coloane ale ciumei mulțumeau cerului pentru sfârșitul unei epidemii."
+          ]
+        }
+      },
+      "sources": [
+        "https://heritageoftimisoara.ro/en/buildings/Cetate/address/Unirii/monument"
+      ]
+    },
+    {
+      "id": "catedrala_mitropolitana",
+      "name": {
+        "en": "Orthodox Metropolitan Cathedral",
+        "ro": "Catedrala Mitropolitană Ortodoxă"
+      },
+      "aliases": [
+        "catedrala mitropolitana",
+        "metropolitan cathedral",
+        "orthodox cathedral",
+        "catedrala ortodoxa",
+        "traianescu"
+      ],
+      "district": "piata_victoriei",
+      "styles": [
+        "Eclectic"
+      ],
+      "architect": "Ioan Traianescu",
+      "confidence": "high",
+      "history": {
+        "en": "The Orthodox Metropolitan Cathedral at the end of Victory Square was built from 1936 to 1946 to designs by Ioan Traianescu, in a Romanian-Byzantine revival style.",
+        "ro": "Catedrala Mitropolitană Ortodoxă de la capătul Pieței Victoriei a fost construită între 1936 și 1946 după proiectul lui Ioan Traianescu, într-un stil neo-bizantin românesc."
+      },
+      "why_it_matters": {
+        "en": "It closes Victory Square opposite the Opera and is the main symbol of Timișoara after 1918.",
+        "ro": "Închide Piața Victoriei în fața Operei și este principalul simbol al Timișoarei de după 1918."
+      },
+      "narration": {
+        "en": {
+          "leads": [
+            "This is the Orthodox Metropolitan Cathedral, built from 1936 to 1946 to designs by Ioan Traianescu."
+          ],
+          "facts": [
+            "It closes Victory Square opposite the Opera.",
+            "Its style revives Romanian and Byzantine church traditions."
+          ]
+        },
+        "ro": {
+          "leads": [
+            "Aceasta este Catedrala Mitropolitană Ortodoxă, construită între 1936 și 1946 după proiectul lui Ioan Traianescu."
+          ],
+          "facts": [
+            "Închide Piața Victoriei în fața Operei.",
+            "Stilul său reia tradițiile bisericești românești și bizantine."
+          ]
+        }
+      },
+      "sources": [
+        "https://en.wikipedia.org/wiki/Timi%C8%99oara_Orthodox_Cathedral"
+      ]
+    }
+  ],
+  "ornaments": [
+    {
+      "id": "mascaron",
+      "detail_types": [
+        "mask"
+      ],
+      "keywords": [
+        "mask",
+        "mascaron",
+        "face",
+        "head",
+        "mascheron",
+        "masca",
+        "fata",
+        "female face",
+        "woman"
+      ],
+      "name": {
+        "en": "mascaron (carved face)",
+        "ro": "mascaron (chip sculptat)"
+      },
+      "meaning": {
+        "en": "Carved faces were believed to guard a house; Secession sculptors turned them into young women framed by flowing hair and plants, symbols of youth, nature and art.",
+        "ro": "Se credea că fețele sculptate păzesc casa; sculptorii Secession le-au transformat în chipuri de femei tinere, încadrate de păr unduitor și plante, simboluri ale tinereții, naturii și artei."
+      },
+      "narration": {
+        "default": {
+          "en": [
+            "Look for the carved face: such masks were believed to guard a house and its people.",
+            "Notice the carved mask, an old guardian of the house."
+          ],
+          "ro": [
+            "Căutați chipul sculptat: se credea că astfel de măști păzesc casa și locuitorii ei.",
+            "Observați masca sculptată, vechi paznic al casei."
+          ]
+        },
+        "Secession": {
+          "en": [
+            "Look for the carved face: Secession sculptors framed such masks with flowing hair and plants, symbols of youth and art.",
+            "Notice the carved mask, a Secession symbol of youth and art."
+          ],
+          "ro": [
+            "Căutați chipul sculptat: sculptorii Secession au încadrat astfel de măști cu păr unduitor și plante, simboluri ale tinereții și artei.",
+            "Observați masca sculptată, simbol Secession al tinereții și artei."
+          ]
+        },
+        "Baroque": {
+          "en": [
+            "Look for the carved face: Baroque masks were meant to ward off evil from the doorway.",
+            "Notice the carved mask, meant to ward off evil."
+          ],
+          "ro": [
+            "Căutați chipul sculptat: măștile baroce trebuiau să alunge răul de la intrare.",
+            "Observați masca sculptată, menită să alunge răul."
+          ]
+        }
+      }
+    },
+    {
+      "id": "lion_head",
+      "detail_types": [
+        "lion_head"
+      ],
+      "keywords": [
+        "lion",
+        "leu",
+        "lowe",
+        "lowenkopf",
+        "oroszlan",
+        "knocker",
+        "ciocan de usa"
+      ],
+      "name": {
+        "en": "lion head",
+        "ro": "cap de leu"
+      },
+      "meaning": {
+        "en": "The lion stands for strength, courage and guardianship, which is why it watches over doors, keystones and knockers.",
+        "ro": "Leul simbolizează puterea, curajul și protecția, de aceea veghează asupra ușilor, cheilor de boltă și ciocanelor de ușă."
+      },
+      "narration": {
+        "default": {
+          "en": [
+            "Notice the lion head: a symbol of strength and guardianship, it watches over the entrance.",
+            "The lion head stands for strength and protection."
+          ],
+          "ro": [
+            "Observați capul de leu: simbol al puterii și al protecției, veghează asupra intrării.",
+            "Capul de leu simbolizează puterea și protecția."
+          ]
+        },
+        "Baroque": {
+          "en": [
+            "Notice the lion head: Baroque builders placed lions over doors as guardians and symbols of strength.",
+            "The lion head guards the entrance, a Baroque symbol of strength."
+          ],
+          "ro": [
+            "Observați capul de leu: constructorii baroci așezau lei deasupra ușilor ca paznici și simboluri ale puterii.",
+            "Capul de leu păzește intrarea, simbol baroc al puterii."
+          ]
+        }
+      }
+    },
+    {
+      "id": "peacock",
+      "detail_types": [
+        "guild_symbol",
+        "architectural_element",
+        "mask"
+      ],
+      "keywords": [
+        "peacock",
+        "paun",
+        "pauni",
+        "pfau",
+        "pava",
+        "bird"
+      ],
+      "name": {
+        "en": "peacock",
+        "ro": "păun"
+      },
+      "meaning": {
+        "en": "The peacock was a favourite Secession motif for beauty and pride, and an old Christian symbol of immortality.",
+        "ro": "Păunul era un motiv preferat al Secessionului pentru frumusețe și mândrie și un vechi simbol creștin al nemuririi."
+      },
+      "narration": {
+        "default": {
+          "en": [
+            "Spot the peacock: a favourite Secession motif for beauty, and an old symbol of immortality.",
+            "The peacock is a Secession symbol of beauty and immortality."
+          ],
+          "ro": [
+            "Observați păunul: un motiv preferat al Secessionului pentru frumusețe și un vechi simbol al nemuririi.",
+            "Păunul este un simbol Secession al frumuseții și nemuririi."
+          ]
+        }
+      }
+    },
+    {
+      "id": "beehive",
+      "detail_types": [
+        "guild_symbol",
+        "architectural_element"
+      ],
+      "keywords": [
+        "beehive",
+        "bee",
+        "hive",
+        "stup",
+        "albina",
+        "albine",
+        "bienenkorb",
+        "meheszet",
+        "kaptar",
+        "takarekpenztar",
+        "savings"
+      ],
+      "name": {
+        "en": "beehive",
+        "ro": "stup"
+      },
+      "meaning": {
+        "en": "The beehive stands for diligence and thrift; in Austria-Hungary it was a favourite emblem of savings banks.",
+        "ro": "Stupul simbolizează hărnicia și economisirea; în Austro-Ungaria era o emblemă preferată a caselor de economii."
+      },
+      "narration": {
+        "default": {
+          "en": [
+            "The beehive stands for diligence and thrift, a favourite emblem of savings banks in Austria-Hungary.",
+            "The beehive is an emblem of diligence and thrift."
+          ],
+          "ro": [
+            "Stupul simbolizează hărnicia și economisirea, o emblemă preferată a caselor de economii din Austro-Ungaria.",
+            "Stupul este o emblemă a hărniciei și economisirii."
+          ]
+        }
+      }
+    },
+    {
+      "id": "caduceus",
+      "detail_types": [
+        "guild_symbol",
+        "architectural_element"
+      ],
+      "keywords": [
+        "caduceus",
+        "caduceu",
+        "hermes",
+        "mercury",
+        "mercur",
+        "merkur",
+        "winged staff",
+        "toiag"
+      ],
+      "name": {
+        "en": "caduceus (staff of Mercury)",
+        "ro": "caduceu (toiagul lui Mercur)"
+      },
+      "meaning": {
+        "en": "The winged staff with two snakes belongs to Mercury, god of trade, and marked banks, merchants and commercial houses. The pharmacy symbol is a different one: a single snake around a bowl or staff.",
+        "ro": "Toiagul înaripat cu doi șerpi îi aparține lui Mercur, zeul comerțului, și marca bănci, negustori și case comerciale. Simbolul farmaciei este altul: un singur șarpe în jurul unei cupe sau al unui toiag."
+      },
+      "narration": {
+        "default": {
+          "en": [
+            "The winged staff with two snakes is the caduceus of Mercury, god of trade, a sign of commerce.",
+            "The winged staff of Mercury is a sign of trade."
+          ],
+          "ro": [
+            "Toiagul înaripat cu doi șerpi este caduceul lui Mercur, zeul comerțului, un semn al negoțului.",
+            "Toiagul înaripat al lui Mercur este un semn al comerțului."
+          ]
+        }
+      }
+    },
+    {
+      "id": "asclepius",
+      "detail_types": [
+        "guild_symbol",
+        "architectural_element"
+      ],
+      "keywords": [
+        "pharmacy",
+        "farmacie",
+        "apotheke",
+        "gyogyszertar",
+        "bowl of hygieia",
+        "hygieia",
+        "asclepius",
+        "snake bowl",
+        "sarpe",
+        "snake"
+      ],
+      "name": {
+        "en": "pharmacy emblem (snake and bowl)",
+        "ro": "emblema farmaciei (șarpele și cupa)"
+      },
+      "meaning": {
+        "en": "A single snake around a bowl or staff is the emblem of pharmacy and medicine.",
+        "ro": "Un singur șarpe în jurul unei cupe sau al unui toiag este emblema farmaciei și a medicinei."
+      },
+      "narration": {
+        "default": {
+          "en": [
+            "The snake and bowl mark a pharmacy, an emblem of healing since antiquity.",
+            "The snake and bowl mark a pharmacy."
+          ],
+          "ro": [
+            "Șarpele și cupa marchează o farmacie, emblemă a vindecării încă din antichitate.",
+            "Șarpele și cupa marchează o farmacie."
+          ]
+        }
+      }
+    },
+    {
+      "id": "guild_tree",
+      "detail_types": [
+        "guild_symbol",
+        "architectural_element"
+      ],
+      "keywords": [
+        "iron tree",
+        "guild tree",
+        "tree",
+        "nails",
+        "pom",
+        "pomul",
+        "copac",
+        "cuie",
+        "stock im eisen",
+        "trunk"
+      ],
+      "name": {
+        "en": "iron guild tree",
+        "ro": "pomul de fier al breslelor"
+      },
+      "meaning": {
+        "en": "Legend links nail-studded trees to journeymen craftsmen who hammered in a nail on their travels, as at the Stock im Eisen in Vienna.",
+        "ro": "Legenda leagă pomii plini de cuie de calfele meșteșugarilor care băteau un cui în timpul călătoriilor, ca la Stock im Eisen din Viena."
+      },
+      "narration": {
+        "default": {
+          "en": [
+            "Legend says travelling journeymen hammered a nail into such iron trees, as in Vienna's Stock im Eisen.",
+            "Legend links such iron trees to travelling journeymen."
+          ],
+          "ro": [
+            "Legenda spune că ucenicii meșteșugari călători băteau un cui în astfel de pomi de fier, ca la Stock im Eisen din Viena.",
+            "Legenda leagă astfel de pomi de fier de calfele călătoare."
+          ]
+        }
+      }
+    },
+    {
+      "id": "house_sign",
+      "detail_types": [
+        "guild_symbol"
+      ],
+      "keywords": [
+        "guild",
+        "sign",
+        "emblem",
+        "breasla",
+        "bresle",
+        "zunft",
+        "ceh",
+        "tools",
+        "hammer",
+        "scissors",
+        "key",
+        "pretzel",
+        "house sign",
+        "firma"
+      ],
+      "name": {
+        "en": "guild sign",
+        "ro": "semn de breaslă"
+      },
+      "meaning": {
+        "en": "Before street numbers, carved or painted signs named houses and advertised the trade of the craftsmen inside.",
+        "ro": "Înainte de numerele de stradă, semnele sculptate sau pictate dădeau nume caselor și anunțau meseria meșteșugarilor dinăuntru."
+      },
+      "narration": {
+        "default": {
+          "en": [
+            "This emblem is a craft sign: before street numbers, such signs named houses and advertised the trade inside.",
+            "The emblem is a craft sign that once named the house."
+          ],
+          "ro": [
+            "Această emblemă este un semn de meserie: înainte de numerele de stradă, astfel de semne dădeau nume caselor.",
+            "Emblema este un semn de meserie care numea odinioară casa."
+          ]
+        }
+      }
+    },
+    {
+      "id": "plaque",
+      "detail_types": [
+        "plaque"
+      ],
+      "keywords": [
+        "plaque",
+        "placa",
+        "tablet",
+        "memorial",
+        "commemorative",
+        "gedenktafel",
+        "emlektabla",
+        "monument"
+      ],
+      "name": {
+        "en": "plaque",
+        "ro": "placă"
+      },
+      "meaning": {
+        "en": "Plaques record who built, lived in or protected a building, and in Timișoara they are often written in more than one language.",
+        "ro": "Plăcile consemnează cine a construit, a locuit sau a protejat o clădire, iar la Timișoara sunt adesea scrise în mai multe limbi."
+      },
+      "narration": {
+        "default": {
+          "en": [
+            "The plaque records part of the building's story; in multilingual Timișoara such texts appear in several languages.",
+            "The plaque records part of the building’s story."
+          ],
+          "ro": [
+            "Placa păstrează o parte din povestea clădirii; în Timișoara multilingvă, astfel de texte apar în mai multe limbi.",
+            "Placa păstrează o parte din povestea clădirii."
+          ]
+        }
+      }
+    },
+    {
+      "id": "inscription",
+      "detail_types": [
+        "inscription"
+      ],
+      "keywords": [
+        "inscription",
+        "inscriptie",
+        "text",
+        "date",
+        "anno",
+        "year",
+        "motto",
+        "letters",
+        "felirat",
+        "inschrift"
+      ],
+      "name": {
+        "en": "inscription",
+        "ro": "inscripție"
+      },
+      "meaning": {
+        "en": "Dates, owners' names and mottos carved into facades record when and for whom a building was made, in the languages of a multiethnic city.",
+        "ro": "Datele, numele proprietarilor și mottourile sculptate pe fațade arată când și pentru cine a fost ridicată o clădire, în limbile unui oraș multietnic."
+      },
+      "narration": {
+        "default": {
+          "en": [
+            "Read the inscription: dates and names carved into facades record when and for whom a building was made.",
+            "The inscription records when and for whom it was built."
+          ],
+          "ro": [
+            "Citiți inscripția: datele și numele sculptate pe fațade arată când și pentru cine a fost ridicată clădirea.",
+            "Inscripția arată când și pentru cine a fost ridicată."
+          ]
+        }
+      }
+    },
+    {
+      "id": "folk_motifs",
+      "detail_types": [
+        "architectural_element",
+        "guild_symbol"
+      ],
+      "keywords": [
+        "tulip",
+        "lalea",
+        "heart",
+        "inima",
+        "folk",
+        "floral",
+        "flower",
+        "floare",
+        "sunflower",
+        "ceramic",
+        "majolica",
+        "tiles",
+        "zsolnay"
+      ],
+      "name": {
+        "en": "folk-inspired floral motif",
+        "ro": "motiv floral de inspirație populară"
+      },
+      "meaning": {
+        "en": "Hungarian Secession borrowed tulips, hearts and other motifs from folk embroidery and pottery to create a national modern style.",
+        "ro": "Secessionul maghiar a împrumutat lalele, inimi și alte motive din broderiile și ceramica populară pentru a crea un stil modern național."
+      },
+      "narration": {
+        "default": {
+          "en": [
+            "The floral motifs echo folk embroidery: Hungarian Secession borrowed tulips and hearts to create a national modern style.",
+            "The floral motifs echo Hungarian folk embroidery."
+          ],
+          "ro": [
+            "Motivele florale amintesc de broderiile populare: Secessionul maghiar a împrumutat lalele și inimi pentru un stil modern național.",
+            "Motivele florale amintesc de broderiile populare maghiare."
+          ]
+        }
+      }
+    },
+    {
+      "id": "putti_garlands",
+      "detail_types": [
+        "architectural_element",
+        "mask"
+      ],
+      "keywords": [
+        "putto",
+        "putti",
+        "cherub",
+        "angel",
+        "inger",
+        "garland",
+        "ghirlanda",
+        "wreath",
+        "cartouche",
+        "cartus",
+        "festoon"
+      ],
+      "name": {
+        "en": "putti, garlands and cartouches",
+        "ro": "putti, ghirlande și cartușe"
+      },
+      "meaning": {
+        "en": "Cherubs, garlands and framed cartouches are classic Baroque and Historicist ornaments of abundance and celebration.",
+        "ro": "Îngerașii, ghirlandele și cartușele sunt ornamente clasice baroce și istoriste ale belșugului și sărbătorii."
+      },
+      "narration": {
+        "default": {
+          "en": [
+            "The garlands and cartouches are classic ornaments of abundance and celebration.",
+            "The garlands celebrate abundance."
+          ],
+          "ro": [
+            "Ghirlandele și cartușele sunt ornamente clasice ale belșugului și sărbătorii.",
+            "Ghirlandele celebrează belșugul."
+          ]
+        }
+      }
+    },
+    {
+      "id": "atlantes",
+      "detail_types": [
+        "architectural_element"
+      ],
+      "keywords": [
+        "atlas",
+        "atlantes",
+        "atlant",
+        "caryatid",
+        "cariatida",
+        "telamon",
+        "figure",
+        "statue",
+        "statuie"
+      ],
+      "name": {
+        "en": "atlantes and caryatids",
+        "ro": "atlanți și cariatide"
+      },
+      "meaning": {
+        "en": "Atlantes and caryatids are carved figures that seem to carry the building, borrowed from ancient Greek architecture.",
+        "ro": "Atlanții și cariatidele sunt figuri sculptate care par să poarte clădirea, preluate din arhitectura Greciei antice."
+      },
+      "narration": {
+        "default": {
+          "en": [
+            "The carved figures seem to carry the building on their shoulders, an idea borrowed from ancient Greece.",
+            "The carved figures seem to carry the building."
+          ],
+          "ro": [
+            "Figurile sculptate par să poarte clădirea pe umeri, o idee preluată din Grecia antică.",
+            "Figurile sculptate par să poarte clădirea."
+          ]
+        }
+      }
+    },
+    {
+      "id": "balcony_ironwork",
+      "detail_types": [
+        "architectural_element"
+      ],
+      "keywords": [
+        "balcony",
+        "balcon",
+        "ironwork",
+        "wrought iron",
+        "fier forjat",
+        "railing",
+        "balustrade",
+        "grille",
+        "gate",
+        "poarta"
+      ],
+      "name": {
+        "en": "balcony and ironwork",
+        "ro": "balcon și fier forjat"
+      },
+      "meaning": {
+        "en": "Balconies and wrought ironwork let architects show off craftsmanship, from Baroque scrolls to Secession whiplash curves.",
+        "ro": "Balcoanele și fierul forjat le permiteau arhitecților să arate măiestria, de la volutele baroce la curbele Secession."
+      },
+      "narration": {
+        "default": {
+          "en": [
+            "Look at the balcony ironwork: blacksmiths turned railings into decoration.",
+            "Notice the decorative wrought ironwork."
+          ],
+          "ro": [
+            "Priviți fierul forjat al balconului: fierarii au transformat balustradele în decor.",
+            "Observați fierul forjat decorativ."
+          ]
+        },
+        "Secession": {
+          "en": [
+            "Look at the ironwork: Secession blacksmiths bent railings into curving, plant-like lines.",
+            "Notice the ironwork, bent into plant-like curves."
+          ],
+          "ro": [
+            "Priviți fierul forjat: fierarii Secession au îndoit balustradele în linii curbe, ca niște plante.",
+            "Observați fierul forjat, îndoit în curbe vegetale."
+          ]
+        }
+      }
+    },
+    {
+      "id": "portal",
+      "detail_types": [
+        "architectural_element"
+      ],
+      "keywords": [
+        "portal",
+        "door",
+        "usa",
+        "doorway",
+        "entrance",
+        "intrare",
+        "gateway",
+        "arch",
+        "arc",
+        "keystone"
+      ],
+      "name": {
+        "en": "portal",
+        "ro": "portal"
+      },
+      "meaning": {
+        "en": "The entrance portal was the showpiece of a facade, framed in stone and often crowned by a keystone, a date or a coat of arms.",
+        "ro": "Portalul de intrare era piesa de rezistență a fațadei, încadrat în piatră și adesea încununat de o cheie de boltă, o dată sau un blazon."
+      },
+      "narration": {
+        "default": {
+          "en": [
+            "The entrance portal was the showpiece of the facade, framed to impress every visitor.",
+            "The portal was framed to impress visitors."
+          ],
+          "ro": [
+            "Portalul de intrare era piesa de rezistență a fațadei, încadrat pentru a impresiona orice vizitator.",
+            "Portalul a fost încadrat pentru a impresiona vizitatorii."
+          ]
+        }
+      }
+    },
+    {
+      "id": "gable_tower",
+      "detail_types": [
+        "architectural_element"
+      ],
+      "keywords": [
+        "gable",
+        "fronton",
+        "pediment",
+        "tower",
+        "turn",
+        "turret",
+        "dome",
+        "cupola",
+        "roof",
+        "acoperis",
+        "attic"
+      ],
+      "name": {
+        "en": "gable or tower",
+        "ro": "fronton sau turn"
+      },
+      "meaning": {
+        "en": "Gables, towers and domes made a building visible from afar and gave each street corner its own landmark.",
+        "ro": "Frontoanele, turnurile și cupolele făceau o clădire vizibilă de departe și dădeau fiecărui colț de stradă propriul reper."
+      },
+      "narration": {
+        "default": {
+          "en": [
+            "The crowning gable makes the building visible from far down the street.",
+            "The crowning gable is visible from far away."
+          ],
+          "ro": [
+            "Frontonul de pe acoperiș face clădirea vizibilă de departe, de la capătul străzii.",
+            "Frontonul de pe acoperiș se vede de departe."
+          ]
+        }
+      }
+    },
+    {
+      "id": "concrete_module",
+      "detail_types": [
+        "architectural_element"
+      ],
+      "keywords": [
+        "concrete",
+        "beton",
+        "panel",
+        "panou",
+        "prefab",
+        "module",
+        "grid",
+        "pilotis"
+      ],
+      "name": {
+        "en": "concrete module",
+        "ro": "modul de beton"
+      },
+      "meaning": {
+        "en": "Repeated concrete panels show industrial construction: the same element cast many times and assembled on site.",
+        "ro": "Panourile de beton repetate arată construcția industrială: același element turnat de multe ori și asamblat pe șantier."
+      },
+      "narration": {
+        "default": {
+          "en": [
+            "Notice the repeated concrete panels: one element, cast many times and assembled on site.",
+            "Notice the repeated prefabricated concrete panels."
+          ],
+          "ro": [
+            "Observați panourile de beton repetate: același element, turnat de multe ori și asamblat pe șantier.",
+            "Observați panourile prefabricate de beton, repetate."
+          ]
+        }
+      }
+    },
+    {
+      "id": "generic_element",
+      "detail_types": [
+        "architectural_element"
+      ],
+      "keywords": [],
+      "name": {
+        "en": "architectural detail",
+        "ro": "detaliu arhitectural"
+      },
+      "meaning": {
+        "en": "Every element of a historic facade, from cornices to window frames, was designed to be seen from the street.",
+        "ro": "Fiecare element al unei fațade istorice, de la cornișe la ramele ferestrelor, a fost gândit pentru a fi văzut din stradă."
+      },
+      "narration": {
+        "default": {
+          "en": [
+            "Take in the highlighted detail: every part of this facade was designed to be admired from the street.",
+            "Take in the highlighted detail."
+          ],
+          "ro": [
+            "Priviți detaliul evidențiat: fiecare parte a acestei fațade a fost gândită pentru a fi admirată din stradă.",
+            "Priviți detaliul evidențiat."
+          ]
+        }
+      }
+    }
+  ],
+  "pads": {
+    "en": [
+      "Take a closer look.",
+      "Enjoy the view.",
+      "Take your time here.",
+      "Every detail tells a story.",
+      "Look closely and enjoy the details.",
+      "Welcome to Timișoara."
+    ],
+    "ro": [
+      "Priviți mai de aproape.",
+      "Bucurați-vă de priveliște.",
+      "Luați-vă timp aici.",
+      "Fiecare detaliu spune o poveste.",
+      "Priviți atent și bucurați-vă de detalii.",
+      "Bine ați venit la Timișoara."
+    ]
+  },
+  "inscriptions": {
+    "phrases": [
+      {
+        "src": [
+          "SOLI DEO GLORIA"
+        ],
+        "lang": "la",
+        "en": "Glory to God alone",
+        "ro": "Slavă numai lui Dumnezeu",
+        "note": {
+          "en": "Latin motto of the Reformation, also common on church bells and houses.",
+          "ro": "Motto latin al Reformei, frecvent pe clopote și case."
+        }
+      },
+      {
+        "src": [
+          "AD MAIOREM DEI GLORIAM",
+          "AD MAJOREM DEI GLORIAM",
+          "OMNIA AD MAIOREM DEI GLORIAM",
+          "A M D G",
+          "AMDG"
+        ],
+        "lang": "la",
+        "en": "For the greater glory of God",
+        "ro": "Spre mai marea slavă a lui Dumnezeu",
+        "note": {
+          "en": "Motto of the Jesuit order.",
+          "ro": "Motto al ordinului iezuit."
+        }
+      },
+      {
+        "src": [
+          "PAX INTRANTIBUS SALUS EXEUNTIBUS",
+          "PAX INTRANTIBUS"
+        ],
+        "lang": "la",
+        "en": "Peace to those who enter, health to those who leave",
+        "ro": "Pace celor care intră, sănătate celor care pleacă",
+        "note": {
+          "en": "Traditional Latin blessing over doorways.",
+          "ro": "Binecuvântare latină tradițională deasupra intrărilor."
+        }
+      },
+      {
+        "src": [
+          "LABOR OMNIA VINCIT"
+        ],
+        "lang": "la",
+        "en": "Work conquers all",
+        "ro": "Munca învinge totul",
+        "note": {
+          "en": "Latin motto after Virgil.",
+          "ro": "Motto latin după Vergiliu."
+        }
+      },
+      {
+        "src": [
+          "DEUS PROVIDEBIT"
+        ],
+        "lang": "la",
+        "en": "God will provide",
+        "ro": "Dumnezeu va purta de grijă",
+        "note": {
+          "en": "Latin motto.",
+          "ro": "Motto latin."
+        }
+      },
+      {
+        "src": [
+          "NISI DOMINUS AEDIFICAVERIT DOMUM"
+        ],
+        "lang": "la",
+        "en": "Unless the Lord builds the house",
+        "ro": "Dacă Domnul nu zidește casa",
+        "note": {
+          "en": "Psalm 127, a common builder's motto.",
+          "ro": "Psalmul 127, motto frecvent al constructorilor."
+        }
+      },
+      {
+        "src": [
+          "SANCTA TRINITAS UNUS DEUS"
+        ],
+        "lang": "la",
+        "en": "Holy Trinity, one God",
+        "ro": "Sfântă Treime, un singur Dumnezeu",
+        "note": {
+          "en": "Latin invocation found on plague columns.",
+          "ro": "Invocație latină de pe coloanele ciumei."
+        }
+      },
+      {
+        "src": [
+          "ISTEN HOZOTT"
+        ],
+        "lang": "hu",
+        "en": "Welcome",
+        "ro": "Bine ați venit",
+        "note": {
+          "en": "Hungarian greeting.",
+          "ro": "Salut maghiar."
+        }
+      },
+      {
+        "src": [
+          "GRÜSS GOTT",
+          "GRUSS GOTT"
+        ],
+        "lang": "de",
+        "en": "God's greeting (hello)",
+        "ro": "Ziua bună (salut tradițional)",
+        "note": {
+          "en": "Austrian German greeting.",
+          "ro": "Salut tradițional austriac."
+        }
+      },
+      {
+        "src": [
+          "TEMESVÁRI TAKARÉKPÉNZTÁR",
+          "TEMESVARI TAKAREKPENZTAR"
+        ],
+        "lang": "hu",
+        "en": "Timișoara Savings Bank",
+        "ro": "Casa de Economii din Timișoara",
+        "note": {
+          "en": "Hungarian name of a savings bank.",
+          "ro": "Denumirea maghiară a unei case de economii."
+        }
+      },
+      {
+        "src": [
+          "ERSTE TEMESVARER SPARCASSA",
+          "ERSTE TEMESVARER SPARKASSE"
+        ],
+        "lang": "de",
+        "en": "First Timișoara Savings Bank",
+        "ro": "Prima Casă de Economii din Timișoara",
+        "note": {
+          "en": "German name of a savings bank.",
+          "ro": "Denumirea germană a unei case de economii."
+        }
+      },
+      {
+        "src": [
+          "СРПСКА ПРАВОСЛАВНА ЦРКВА",
+          "SRPSKA PRAVOSLAVNA CRKVA"
+        ],
+        "lang": "sr",
+        "en": "Serbian Orthodox Church",
+        "ro": "Biserica Ortodoxă Sârbă",
+        "note": {
+          "en": "Serbian.",
+          "ro": "Sârbă."
+        }
+      },
+      {
+        "src": [
+          "СРПСКА ПРАВОСЛАВНА ОПШТИНА",
+          "SRPSKA PRAVOSLAVNA OPŠTINA",
+          "SRPSKA PRAVOSLAVNA OPSTINA"
+        ],
+        "lang": "sr",
+        "en": "Serbian Orthodox Community",
+        "ro": "Comunitatea Ortodoxă Sârbă",
+        "note": {
+          "en": "Serbian.",
+          "ro": "Sârbă."
+        }
+      },
+      {
+        "src": [
+          "MONUMENT ISTORIC"
+        ],
+        "lang": "ro",
+        "en": "Historic monument",
+        "ro": "Monument istoric",
+        "note": {
+          "en": "Romanian heritage label.",
+          "ro": "Marcaj de patrimoniu."
+        }
+      },
+      {
+        "src": [
+          "AICI A LOCUIT"
+        ],
+        "lang": "ro",
+        "en": "Here lived",
+        "ro": "Aici a locuit",
+        "note": {
+          "en": "Romanian commemorative formula.",
+          "ro": "Formulă comemorativă."
+        }
+      }
+    ],
+    "patterns": [
+      {
+        "id": "anno",
+        "regex": "^(?:ANNO|A\\.?\\s?D\\.?|ANNO\\s+DOMINI)\\s+(?<year>\\d{3,4}|[MDCLXVI]+)\\.?$",
+        "en": "In the year {year}",
+        "ro": "În anul {year}"
+      },
+      {
+        "id": "hu_built",
+        "regex": "^(?:ÉPÜLT|EPULT|ÉPITTETETT|EPITTETETT|ÉPÍTTETETT)\\s*:?\\s*(?<year>\\d{4}|[MDCLXVI]+)\\.?(?:\\s*(?:BEN|-BEN|BAN|-BAN))?$",
+        "en": "Built in {year}",
+        "ro": "Construit în {year}"
+      },
+      {
+        "id": "hu_built_year_first",
+        "regex": "^(?<year>\\d{4})\\s*[-–]?\\s*(?:BEN|BAN)?\\s+(?:ÉPÜLT|EPULT)$",
+        "en": "Built in {year}",
+        "ro": "Construit în {year}"
+      },
+      {
+        "id": "hu_built_by",
+        "regex": "^(?:ÉPÍTETTE|EPITETTE|ÉPITETTE|TERVEZTE)\\s*:?\\s+(?<name>.+)$",
+        "en": "Built by {name}",
+        "ro": "Construit de {name}"
+      },
+      {
+        "id": "hu_renovated",
+        "regex": "^(?:RENOVÁLVA|RENOVALVA|RENOVÁLTATOTT|RENOVALTATOTT|HELYREÁLLÍTVA|HELYREALLITVA)\\s*:?\\s*(?<year>\\d{4})\\.?$",
+        "en": "Renovated in {year}",
+        "ro": "Renovat în {year}"
+      },
+      {
+        "id": "hu_founded",
+        "regex": "^(?:ALAPÍTTATOTT|ALAPITTATOTT|ALAPÍTVA|ALAPITVA|ALAPÍTTATOTT\\s+ÉVBEN)\\s*:?\\s*(?<year>\\d{4})\\.?$",
+        "en": "Founded in {year}",
+        "ro": "Fondat în {year}"
+      },
+      {
+        "id": "de_built",
+        "regex": "^(?:ERBAUT|GEBAUT|ERBAUT\\s+IM\\s+JAHRE|ERRICHTET|ERBAUT\\s+ANNO)\\s*:?\\s*(?<year>\\d{4}|[MDCLXVI]+)\\.?$",
+        "en": "Built in {year}",
+        "ro": "Construit în {year}"
+      },
+      {
+        "id": "de_renovated",
+        "regex": "^(?:RENOVIERT|RESTAURIERT|ERNEUERT)\\s*:?\\s*(?:IM\\s+JAHRE\\s+)?(?<year>\\d{4})\\.?$",
+        "en": "Renovated in {year}",
+        "ro": "Renovat în {year}"
+      },
+      {
+        "id": "de_founded",
+        "regex": "^(?:GEGRÜNDET|GEGRUENDET|GEGRUNDET|GEGR\\.)\\s*:?\\s*(?<year>\\d{4})\\.?$",
+        "en": "Founded in {year}",
+        "ro": "Fondat în {year}"
+      },
+      {
+        "id": "ro_built",
+        "regex": "^(?:CONSTRUIT|CONSTRUITĂ|CONSTRUITA|ZIDIT|ZIDITĂ|ZIDITA|RIDICAT|RIDICATĂ|RIDICATA)(?:\\s+[ÎI]N)?\\s*:?\\s*(?:ANUL\\s+)?(?<year>\\d{4})\\.?$",
+        "en": "Built in {year}",
+        "ro": "Construit în {year}"
+      },
+      {
+        "id": "ro_restored",
+        "regex": "^(?:RESTAURAT|RESTAURATĂ|RESTAURATA|RENOVAT|RENOVATĂ|RENOVATA)(?:\\s+[ÎI]N)?\\s*:?\\s*(?:ANUL\\s+)?(?<year>\\d{4})\\.?$",
+        "en": "Restored in {year}",
+        "ro": "Restaurat în {year}"
+      },
+      {
+        "id": "la_restored",
+        "regex": "^(?:RENOVATUM|RESTAURATUM|RENOVATA|RESTAURATA)\\s+(?:ANNO\\s+)?(?<year>\\d{4}|[MDCLXVI]+)\\.?$",
+        "en": "Restored in the year {year}",
+        "ro": "Restaurat în anul {year}"
+      },
+      {
+        "id": "year_range",
+        "regex": "^(?<y1>\\d{4})\\s*[-–]\\s*(?<y2>\\d{4})$",
+        "en": "{y1} to {y2}",
+        "ro": "{y1}–{y2}"
+      },
+      {
+        "id": "year_only",
+        "regex": "^(?<year>\\d{4}|[MDCLXVI]{3,})\\.?$",
+        "en": "{year}",
+        "ro": "{year}"
+      }
+    ],
+    "glossary": {
+      "temesvár": {
+        "en": "Timișoara",
+        "ro": "Timișoara",
+        "lang": "hu"
+      },
+      "temesvári": {
+        "en": "Timișoara",
+        "ro": "din Timișoara",
+        "lang": "hu"
+      },
+      "temeswar": {
+        "en": "Timișoara",
+        "ro": "Timișoara",
+        "lang": "de"
+      },
+      "temesvarer": {
+        "en": "Timișoara",
+        "ro": "din Timișoara",
+        "lang": "de"
+      },
+      "temeschburg": {
+        "en": "Timișoara",
+        "ro": "Timișoara",
+        "lang": "de"
+      },
+      "темишвар": {
+        "en": "Timișoara",
+        "ro": "Timișoara",
+        "lang": "sr"
+      },
+      "temišvar": {
+        "en": "Timișoara",
+        "ro": "Timișoara",
+        "lang": "sr"
+      },
+      "takarékpénztár": {
+        "en": "Savings Bank",
+        "ro": "Casa de Economii",
+        "lang": "hu"
+      },
+      "gyógyszertár": {
+        "en": "Pharmacy",
+        "ro": "Farmacie",
+        "lang": "hu"
+      },
+      "patika": {
+        "en": "Pharmacy",
+        "ro": "Farmacie",
+        "lang": "hu"
+      },
+      "bank": {
+        "en": "Bank",
+        "ro": "Banca",
+        "lang": "hu"
+      },
+      "bankja": {
+        "en": "Bank",
+        "ro": "Banca",
+        "lang": "hu"
+      },
+      "kereskedelmi": {
+        "en": "Commercial",
+        "ro": "Comercială",
+        "lang": "hu",
+        "pos": "adj"
+      },
+      "részvénytársaság": {
+        "en": "Joint-Stock Company",
+        "ro": "Societate pe Acțiuni",
+        "lang": "hu"
+      },
+      "rt": {
+        "en": "Ltd.",
+        "ro": "S.A.",
+        "lang": "hu"
+      },
+      "bérház": {
+        "en": "Apartment Building",
+        "ro": "Casă de raport",
+        "lang": "hu"
+      },
+      "palota": {
+        "en": "Palace",
+        "ro": "Palatul",
+        "lang": "hu"
+      },
+      "szálloda": {
+        "en": "Hotel",
+        "ro": "Hotel",
+        "lang": "hu"
+      },
+      "ipartestület": {
+        "en": "Craftsmen's Guild",
+        "ro": "Asociația Meseriașilor",
+        "lang": "hu"
+      },
+      "kaszinó": {
+        "en": "Casino (social club)",
+        "ro": "Cazinou (club social)",
+        "lang": "hu"
+      },
+      "iskola": {
+        "en": "School",
+        "ro": "Școala",
+        "lang": "hu"
+      },
+      "templom": {
+        "en": "Church",
+        "ro": "Biserica",
+        "lang": "hu"
+      },
+      "zsinagóga": {
+        "en": "Synagogue",
+        "ro": "Sinagoga",
+        "lang": "hu"
+      },
+      "ház": {
+        "en": "House",
+        "ro": "Casa",
+        "lang": "hu"
+      },
+      "háza": {
+        "en": "House",
+        "ro": "Casa",
+        "lang": "hu"
+      },
+      "épült": {
+        "en": "built",
+        "ro": "construit",
+        "lang": "hu"
+      },
+      "évben": {
+        "en": "in the year",
+        "ro": "în anul",
+        "lang": "hu"
+      },
+      "apotheke": {
+        "en": "Pharmacy",
+        "ro": "Farmacie",
+        "lang": "de"
+      },
+      "sparkasse": {
+        "en": "Savings Bank",
+        "ro": "Casa de Economii",
+        "lang": "de"
+      },
+      "sparcassa": {
+        "en": "Savings Bank",
+        "ro": "Casa de Economii",
+        "lang": "de"
+      },
+      "erste": {
+        "en": "First",
+        "ro": "Prima",
+        "lang": "de"
+      },
+      "haus": {
+        "en": "House",
+        "ro": "Casa",
+        "lang": "de"
+      },
+      "zum": {
+        "en": "At the",
+        "ro": "La",
+        "lang": "de"
+      },
+      "zur": {
+        "en": "At the",
+        "ro": "La",
+        "lang": "de"
+      },
+      "goldenen": {
+        "en": "Golden",
+        "ro": "de Aur",
+        "lang": "de"
+      },
+      "weissen": {
+        "en": "White",
+        "ro": "Alb",
+        "lang": "de",
+        "pos": "adj"
+      },
+      "schwarzen": {
+        "en": "Black",
+        "ro": "Negru",
+        "lang": "de",
+        "pos": "adj"
+      },
+      "löwen": {
+        "en": "Lion",
+        "ro": "Leul",
+        "lang": "de"
+      },
+      "hirschen": {
+        "en": "Stag",
+        "ro": "Cerbul",
+        "lang": "de"
+      },
+      "adler": {
+        "en": "Eagle",
+        "ro": "Vulturul",
+        "lang": "de"
+      },
+      "kirche": {
+        "en": "Church",
+        "ro": "Biserica",
+        "lang": "de"
+      },
+      "schule": {
+        "en": "School",
+        "ro": "Școala",
+        "lang": "de"
+      },
+      "gasthaus": {
+        "en": "Inn",
+        "ro": "Han",
+        "lang": "de"
+      },
+      "handels": {
+        "en": "Commercial",
+        "ro": "Comercială",
+        "lang": "de",
+        "pos": "adj"
+      },
+      "gewerbe": {
+        "en": "Trade",
+        "ro": "Meserii",
+        "lang": "de"
+      },
+      "anno": {
+        "en": "in the year",
+        "ro": "în anul",
+        "lang": "la"
+      },
+      "domus": {
+        "en": "House",
+        "ro": "Casa",
+        "lang": "la"
+      },
+      "deo": {
+        "en": "to God",
+        "ro": "lui Dumnezeu",
+        "lang": "la"
+      },
+      "gloria": {
+        "en": "glory",
+        "ro": "slavă",
+        "lang": "la"
+      },
+      "pax": {
+        "en": "peace",
+        "ro": "pace",
+        "lang": "la"
+      },
+      "српска": {
+        "en": "Serbian",
+        "ro": "Sârbă",
+        "lang": "sr",
+        "pos": "adj"
+      },
+      "srpska": {
+        "en": "Serbian",
+        "ro": "Sârbă",
+        "lang": "sr",
+        "pos": "adj"
+      },
+      "српски": {
+        "en": "Serbian",
+        "ro": "Sârbesc",
+        "lang": "sr",
+        "pos": "adj"
+      },
+      "srpski": {
+        "en": "Serbian",
+        "ro": "Sârbesc",
+        "lang": "sr",
+        "pos": "adj"
+      },
+      "православна": {
+        "en": "Orthodox",
+        "ro": "Ortodoxă",
+        "lang": "sr",
+        "pos": "adj"
+      },
+      "pravoslavna": {
+        "en": "Orthodox",
+        "ro": "Ortodoxă",
+        "lang": "sr",
+        "pos": "adj"
+      },
+      "црква": {
+        "en": "Church",
+        "ro": "Biserica",
+        "lang": "sr"
+      },
+      "crkva": {
+        "en": "Church",
+        "ro": "Biserica",
+        "lang": "sr"
+      },
+      "дом": {
+        "en": "House",
+        "ro": "Casa",
+        "lang": "sr"
+      },
+      "dom": {
+        "en": "House",
+        "ro": "Casa",
+        "lang": "sr"
+      },
+      "школа": {
+        "en": "School",
+        "ro": "Școala",
+        "lang": "sr"
+      },
+      "škola": {
+        "en": "School",
+        "ro": "Școala",
+        "lang": "sr"
+      },
+      "farmacie": {
+        "en": "Pharmacy",
+        "ro": "Farmacie",
+        "lang": "ro"
+      },
+      "farmacia": {
+        "en": "The Pharmacy",
+        "ro": "Farmacia",
+        "lang": "ro"
+      },
+      "casa": {
+        "en": "House",
+        "ro": "Casa",
+        "lang": "ro"
+      },
+      "palatul": {
+        "en": "Palace",
+        "ro": "Palatul",
+        "lang": "ro"
+      },
+      "biserica": {
+        "en": "Church",
+        "ro": "Biserica",
+        "lang": "ro"
+      },
+      "școala": {
+        "en": "School",
+        "ro": "Școala",
+        "lang": "ro"
+      },
+      "scoala": {
+        "en": "School",
+        "ro": "Școala",
+        "lang": "ro"
+      },
+      "banca": {
+        "en": "Bank",
+        "ro": "Banca",
+        "lang": "ro"
+      },
+      "construit": {
+        "en": "built",
+        "ro": "construit",
+        "lang": "ro"
+      },
+      "anul": {
+        "en": "the year",
+        "ro": "anul",
+        "lang": "ro"
+      },
+      "monument": {
+        "en": "monument",
+        "ro": "monument",
+        "lang": "ro"
+      },
+      "istoric": {
+        "en": "historic",
+        "ro": "istoric",
+        "lang": "ro",
+        "pos": "adj"
+      }
+    }
+  }
+}
