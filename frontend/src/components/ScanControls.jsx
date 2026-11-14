@@ -1,5 +1,20 @@
-import { ChevronLeft, ChevronRight, ImageUp, ScanLine, Radar } from 'lucide-react';
+import { Camera, ChevronLeft, ChevronRight, ImageUp, ScanLine, Radar } from 'lucide-react';
 import { STRINGS } from '../i18n.js';
+
+function UploadInput({ onUpload }) {
+  return (
+    <input
+      type="file"
+      accept="image/*"
+      hidden
+      onChange={(e) => {
+        const f = e.target.files?.[0];
+        e.target.value = '';
+        if (f) onUpload(f);
+      }}
+    />
+  );
+}
 
 export default function ScanControls({
   lang,
@@ -12,6 +27,7 @@ export default function ScanControls({
   onPrevSample,
   onNextSample,
   onUpload,
+  onUseCamera,
 }) {
   const t = STRINGS[lang];
   return (
@@ -43,20 +59,21 @@ export default function ScanControls({
             </button>
             <label className="icon-btn" aria-label={t.upload} title={t.upload}>
               <ImageUp size={18} />
-              <input
-                type="file"
-                accept="image/*"
-                hidden
-                onChange={(e) => {
-                  const f = e.target.files?.[0];
-                  e.target.value = '';
-                  if (f) onUpload(f);
-                }}
-              />
+              <UploadInput onUpload={onUpload} />
             </label>
+            {onUseCamera && (
+              <button type="button" className="icon-btn" onClick={onUseCamera} aria-label={t.useCamera} title={t.useCamera}>
+                <Camera size={18} />
+              </button>
+            )}
           </div>
         ) : (
-          <span className="scan-label">{scanning ? t.scanning : t.scan}</span>
+          // Live camera: let laptop users analyse a photo of a building instead of the webcam.
+          <label className="toggle upload-pill" title={t.upload}>
+            <ImageUp size={16} />
+            <span>{t.upload}</span>
+            <UploadInput onUpload={onUpload} />
+          </label>
         )}
       </div>
     </div>

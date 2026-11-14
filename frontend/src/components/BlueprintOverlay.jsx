@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { Html } from '@react-three/drei';
 import * as THREE from 'three';
-import { coverTransform, bboxToView } from '../services/coverMapping.js';
+import { fitTransform, bboxToView } from '../services/coverMapping.js';
 import { DETAIL_ICONS } from './detailMeta.js';
 import { STRINGS } from '../i18n.js';
 
@@ -220,15 +220,24 @@ function outlineSegments({ x, y, w, h }) {
 
 const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
 
+// Screen bands owned by the HUD: top bar + style pill, and the narration / controls / sheet dock.
+const TOP_SAFE = 116;
+const BOTTOM_SAFE = 250;
+const BADGE_HALF_H = 22;
+const LEADER = 18;
+
 /**
- * Badge layout: hang it above the box (below if there is no room), extending to the
- * right of the leader elbow, or flipped to the left when it would overflow the viewport.
+ * Badge layout: hang it above the box, or below it when the space above is covered by the
+ * top HUD (and the space below is not covered by the bottom dock). It extends to the right
+ * of the leader elbow, or is flipped to the left when it would overflow the viewport.
  */
 function placeBadge(rect, view, badgeW) {
   const margin = 8;
   const gap = 20; // elbow → badge
-  const above = rect.y > 64;
-  const elbowY = above ? rect.y - 18 : rect.y + rect.h + 18;
+  const roomAbove = rect.y - LEADER - BADGE_HALF_H > TOP_SAFE;
+  const roomBelow = rect.y + rect.h + LEADER + BADGE_HALF_H < view.h - BOTTOM_SAFE;
+  const above = roomAbove || !roomBelow;
+  const elbowY = above ? rect.y - LEADER : rect.y + rect.h + LEADER;
   const flip = rect.x + 22 + gap + badgeW > view.w - margin;
   if (!flip) {
     const ax = clamp(rect.x + 22, margin, Math.max(margin, view.w - margin - gap - badgeW));
@@ -390,10 +399,10 @@ function useTrackedDetails(details) {
   return items;
 }
 
-function Scene({ details, sourceSize, selectedId, onSelect, lang }) {
+function Scene({ details, sourceSize, fit, selectedId, onSelect, lang }) {
   const size = useThree((s) => s.size);
   const view = { w: size.width, h: size.height };
-  const t = coverTransform(sourceSize.width, sourceSize.height, size.width, size.height);
+  const t = fitTransform(sourceSize.width, sourceSize.height, size.width, size.height, fit);
   const items = useTrackedDetails(details);
 
   return items.map(({ detail, leaving }, i) => (
@@ -416,7 +425,7 @@ function Scene({ details, sourceSize, selectedId, onSelect, lang }) {
  * Transparent WebGL overlay aligned with an `object-fit: cover` media element that fills
  * the same container. `sourceSize` is the intrinsic size of the frame the bboxes refer to.
  */
-export default function BlueprintOverlay({ details, sourceSize, selectedId, onSelect, lang }) {
+export default function BlueprintOverlay({ details, sourceSize, fit = 'cover', selectedId, onSelect, lang }) {
   const ready = sourceSize?.width > 0 && sourceSize?.height > 0;
   return (
     <div className="bp-overlay" aria-hidden={details.length === 0}>
@@ -428,7 +437,7 @@ export default function BlueprintOverlay({ details, sourceSize, selectedId, onSe
         style={{ pointerEvents: 'none' }}
       >
         {ready && (
-          <Scene details={details} sourceSize={sourceSize} selectedId={selectedId} onSelect={onSelect} lang={lang} />
+          <Scene details={details} sourceSize={sourceSize} fit={fit} selectedId={selectedId} onSelect={onSelect} lang={lang} />
         )}
       </Canvas>
     </div>

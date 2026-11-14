@@ -42,6 +42,9 @@ export function useNarrationPlayer() {
   const audioRef = useRef(null);
   const trackRef = useRef(null); // { text, lang, duration_s, url }
   const speechRef = useRef({ startedAt: 0, elapsedBefore: 0, charProgress: 0 });
+  const resetSpeech = () => {
+    speechRef.current = { startedAt: 0, elapsedBefore: 0, charProgress: 0 };
+  };
   const modeRef = useRef(null);
   const statusRef = useRef('idle');
   const genRef = useRef(0); // invalidates stale async callbacks on each load
@@ -119,21 +122,26 @@ export function useNarrationPlayer() {
       return;
     }
     window.speechSynthesis.cancel();
-    const u = new SpeechSynthesisUtterance(tr.text);
+    if (fromStart) resetSpeech();
+    const sp = speechRef.current;
+    // Resume = speak the remaining text from the last known position, snapped back to a word start.
+    // (Position comes from word-boundary events, or from elapsed time when the voice sends none.)
+    let offset = 0;
+    if (!fromStart && tr.text.length) {
+      const frac = sp.charProgress > 0 ? sp.charProgress : tr.duration_s ? sp.elapsedBefore / tr.duration_s : 0;
+      const idx = Math.min(tr.text.length - 1, Math.floor(Math.min(0.99, frac) * tr.text.length));
+      offset = tr.text.lastIndexOf(' ', idx) + 1;
+    }
+    const u = new SpeechSynthesisUtterance(tr.text.slice(offset));
     utterRef.current = u;
     u.lang = tr.lang === 'ro' ? 'ro-RO' : 'en-GB';
     const voice = pickVoice(tr.lang);
     if (voice) u.voice = voice;
     u.rate = 1;
-    const sp = speechRef.current;
-    if (fromStart) {
-      sp.elapsedBefore = 0;
-      sp.charProgress = 0;
-    }
     sp.startedAt = performance.now();
     u.onboundary = (e) => {
       if (u !== utterRef.current) return;
-      if (typeof e.charIndex === 'number' && tr.text.length) sp.charProgress = e.charIndex / tr.text.length;
+      if (typeof e.charIndex === 'number' && tr.text.length) sp.charProgress = (offset + e.charIndex) / tr.text.length;
     };
     u.onend = () => {
       if (u !== utterRef.current || modeRef.current !== 'speech') return;
@@ -197,6 +205,7 @@ export function useNarrationPlayer() {
     utterRef.current = null;
     audioRef.current?.pause();
     if (speechSupported()) window.speechSynthesis.cancel();
+    resetSpeech();
     setStatus('idle');
     setProgress(0);
   }, []);
@@ -237,7 +246,10 @@ export function useNarrationPlayer() {
     else if (speechSupported()) {
       const sp = speechRef.current;
       sp.elapsedBefore += (performance.now() - sp.startedAt) / 1000;
-      window.speechSynthesis.pause();
+      // speechSynthesis.pause() is ignored by some Chrome voices (the voice keeps talking), so
+      // cancel for real and resume later from the saved position (see speak(false)).
+      utterRef.current = null; // ignore events from the cancelled utterance
+      window.speechSynthesis.cancel();
     }
     setStatus('paused');
   }, []);
@@ -247,13 +259,7 @@ export function useNarrationPlayer() {
     const s = statusRef.current;
     if (s === 'ended' || s === 'idle') return replay();
     if (modeRef.current === 'audio') return playAudio(false);
-    if (speechSupported()) {
-      if (window.speechSynthesis.paused && window.speechSynthesis.speaking) {
-        speechRef.current.startedAt = performance.now();
-        window.speechSynthesis.resume();
-        setStatus('playing');
-      } else speak(true);
-    }
+    if (speechSupported()) speak(false); // continue from where pause() stopped
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [playAudio, speak]);
 

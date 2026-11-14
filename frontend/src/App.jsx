@@ -133,6 +133,8 @@ export default function App() {
     try {
       await drawFileToCanvas(file, canvasRef.current);
       setUploaded(true);
+      // From the live camera (e.g. a laptop webcam): switch to analysing the uploaded photo.
+      if (camera.mode !== 'fallback') enterFallback('manual');
       setSrcSize(sourceSize(canvasRef.current));
       clearResult();
     } catch {
@@ -226,6 +228,9 @@ export default function App() {
     return () => {
       active = false;
       clearTimeout(timer);
+      // Turning Live Scan off must also cancel the request already in flight; otherwise its
+      // result lands after the toggle and updates the overlay / starts narration.
+      abortRef.current?.abort();
     };
   }, [liveScan, doScan]);
 
@@ -286,13 +291,14 @@ export default function App() {
     <div className="app">
       <div className="stage">
         <video ref={videoRef} className={`media ${camera.mode === 'live' ? '' : 'hidden'}`} playsInline muted autoPlay />
-        <canvas ref={canvasRef} className={`media ${fallback ? '' : 'hidden'}`} />
+        <canvas ref={canvasRef} className={`media contain ${fallback ? '' : 'hidden'}`} />
         <div className="vignette" />
         <ScanLaser active={scanning} />
         <Reticle dim={overlayDetails.length > 0} />
         <BlueprintOverlay
           details={overlayDetails}
           sourceSize={srcSize}
+          fit={fallback ? 'contain' : 'cover'}
           selectedId={selectedId}
           onSelect={setSelectedId}
           lang={lang}
@@ -310,7 +316,7 @@ export default function App() {
       />
 
       <div className="center-hud">
-        {fallback && !result && !error && <CameraBanner reason={camera.reason} lang={lang} onRetry={tryCamera} />}
+        {fallback && !uploaded && !result && !error && <CameraBanner reason={camera.reason} lang={lang} onRetry={tryCamera} />}
         {camera.mode === 'starting' && <div className="hint">…</div>}
         {showIdleHint && <div className="hint">{liveScan ? t.liveHint : t.point}</div>}
         {blockingError && (
@@ -350,6 +356,15 @@ export default function App() {
           onPrevSample={() => changeSample(-1)}
           onNextSample={() => changeSample(1)}
           onUpload={onUpload}
+          onUseCamera={
+            camera.reason === 'manual'
+              ? () => {
+                  setUploaded(false);
+                  clearResult();
+                  tryCamera();
+                }
+              : undefined
+          }
         />
         <DetailsSheet
           result={result}
