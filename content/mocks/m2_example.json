@@ -1,0 +1,20 @@
+{
+  "style": "Secession",
+  "confidence": 0.87,
+  "details": [
+    {
+      "id": "det_1",
+      "label": "Secession Mask (Mascaron)",
+      "type": "mask",
+      "bbox": [0.32, 0.18, 0.14, 0.16],
+      "raw_text": null
+    },
+    {
+      "id": "det_2",
+      "label": "Dated Inscription",
+      "type": "inscription",
+      "bbox": [0.40, 0.62, 0.22, 0.06],
+      "raw_text": "ANNO 1910"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@unihack2026/content",
+  "version": "1.0.0",
+  "description": "M3: Timișoara heritage knowledge base, grounded narration (RO/EN), inscription translation and cached TTS.",
+  "type": "module",
+  "main": "index.js",
+  "exports": { ".": "./index.js" },
+  "engines": { "node": ">=20.12" },
+  "scripts": {
+    "test": "node test-samples.js",
+    "test:live": "node test-samples.js --live",
+    "try": "node scripts/try.js",
+    "warm": "node scripts/warm.js"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}
