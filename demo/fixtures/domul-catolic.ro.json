@@ -1,0 +1,66 @@
+{
+  "style": "Baroque",
+  "confidence": 0.93,
+  "details": [
+    {
+      "id": "det_1",
+      "label": "Twin Bell Towers",
+      "type": "architectural_element",
+      "bbox": [
+        0.1,
+        0.02,
+        0.8,
+        0.22
+      ],
+      "raw_text": null,
+      "translated_text": null
+    },
+    {
+      "id": "det_2",
+      "label": "Statue Niche",
+      "type": "architectural_element",
+      "bbox": [
+        0.44,
+        0.36,
+        0.12,
+        0.16
+      ],
+      "raw_text": null,
+      "translated_text": null
+    },
+    {
+      "id": "det_3",
+      "label": "Main Portal",
+      "type": "architectural_element",
+      "bbox": [
+        0.4,
+        0.72,
+        0.2,
+        0.26
+      ],
+      "raw_text": null,
+      "translated_text": null
+    },
+    {
+      "id": "det_4",
+      "label": "Latin Date Inscription",
+      "type": "inscription",
+      "bbox": [
+        0.38,
+        0.62,
+        0.24,
+        0.05
+      ],
+      "raw_text": "ANNO 1774",
+      "translated_text": "În anul 1774"
+    }
+  ],
+  "narration": {
+    "text": "Aceasta este Catedrala Romano-Catolică Sfântul Gheorghe din Piața Unirii, construită între 1736 și 1774. Fațada barocă, cu două turnuri, pilaștri și nișe sculptate, a fost gândită să impresioneze credincioșii și să inspire un sentiment de uimire.",
+    "audio_url": "",
+    "duration_s": 14.4,
+    "building_name": "Domul Romano-Catolic Sfântul Gheorghe",
+    "history": "Catedrala a fost construită în deceniile de după cucerirea Timișoarei de către habsburgi în 1716, când orașul a fost reconstruit ca oraș-cetate baroc.",
+    "why_it_matters": "Este una dintre cele mai importante biserici baroce din regiune și un simbol al Pieței Unirii."
+  }
+}

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 640" width="480" height="640">
+<title>Palatul Lloyd · Cetate · expected: Eclectic</title>
+<rect x="0" y="0" width="480" height="40.6" fill="rgb(150,196,235)"/>
+<rect x="0" y="40" width="480" height="40.6" fill="rgb(154,198,236)"/>
+<rect x="0" y="80" width="480" height="40.6" fill="rgb(159,201,236)"/>
+<rect x="0" y="120" width="480" height="40.6" fill="rgb(163,203,237)"/>
+<rect x="0" y="160" width="480" height="40.6" fill="rgb(167,206,238)"/>
+<rect x="0" y="200" width="480" height="40.6" fill="rgb(171,208,239)"/>
+<rect x="0" y="240" width="480" height="40.6" fill="rgb(176,210,239)"/>
+<rect x="0" y="280" width="480" height="40.6" fill="rgb(180,213,240)"/>
+<rect x="0" y="320" width="480" height="40.6" fill="rgb(184,215,241)"/>
+<rect x="0" y="360" width="480" height="40.6" fill="rgb(188,218,242)"/>
+<rect x="0" y="400" width="480" height="40.6" fill="rgb(193,220,242)"/>
+<rect x="0" y="440" width="480" height="40.6" fill="rgb(197,222,243)"/>
+<rect x="0" y="480" width="480" height="40.6" fill="rgb(201,225,244)"/>
+<rect x="0" y="520" width="480" height="40.6" fill="rgb(205,227,245)"/>
+<rect x="0" y="560" width="480" height="40.6" fill="rgb(210,230,245)"/>
+<rect x="0" y="600" width="480" height="40.6" fill="rgb(214,232,246)"/>
+<rect x="28.8" y="64" width="422.4" height="576" fill="rgb(214,168,148)"/>
+<rect x="24" y="64" width="432" height="12.8" fill="rgb(235,220,200)"/>
+<rect x="28.8" y="435.2" width="422.4" height="7.7" fill="rgb(235,220,200)"/>
+<rect x="77.5" y="118.4" width="51.4" height="64" fill="rgb(70,96,120)"/>
+<rect x="168.7" y="118.4" width="51.4" height="64" fill="rgb(70,96,120)"/>
+<rect x="259.9" y="118.4" width="51.4" height="64" fill="rgb(70,96,120)"/>
+<rect x="351.1" y="118.4" width="51.4" height="64" fill="rgb(70,96,120)"/>
+<rect x="77.5" y="225.1" width="51.4" height="64" fill="rgb(70,96,120)"/>
+<rect x="168.7" y="225.1" width="51.4" height="64" fill="rgb(70,96,120)"/>
+<rect x="259.9" y="225.1" width="51.4" height="64" fill="rgb(70,96,120)"/>
+<rect x="351.1" y="225.1" width="51.4" height="64" fill="rgb(70,96,120)"/>
+<rect x="77.5" y="331.7" width="51.4" height="64" fill="rgb(70,96,120)"/>
+<rect x="168.7" y="331.7" width="51.4" height="64" fill="rgb(70,96,120)"/>
+<rect x="259.9" y="331.7" width="51.4" height="64" fill="rgb(70,96,120)"/>
+<rect x="351.1" y="331.7" width="51.4" height="64" fill="rgb(70,96,120)"/>
+<rect x="28.8" y="620.8" width="422.4" height="19.2" fill="rgb(120,116,110)"/>
+<rect x="316.3" y="44.2" width="87.4" height="58.2" fill="rgb(235,220,200)"/>
+<ellipse cx="360" cy="44.2" rx="49.9" ry="31.4" fill="rgb(150,88,68)"/>
+<ellipse cx="240" cy="224" rx="28.8" ry="32" fill="rgb(235,220,200)"/>
+<ellipse cx="229.1" cy="216.3" rx="5.2" ry="5.1" fill="rgb(52,58,70)"/>
+<ellipse cx="250.9" cy="216.3" rx="5.2" ry="5.1" fill="rgb(52,58,70)"/>
+<rect x="231.4" y="235.5" width="17.3" height="5.1" fill="rgb(52,58,70)"/>
+<rect x="144" y="294.4" width="192" height="9.6" fill="rgb(52,58,70)"/>
+<rect x="144" y="325.1" width="192" height="7.7" fill="rgb(52,58,70)"/>
+<rect x="144" y="294.4" width="5.8" height="38.4" fill="rgb(52,58,70)"/>
+<rect x="168" y="294.4" width="5.8" height="38.4" fill="rgb(52,58,70)"/>
+<rect x="192" y="294.4" width="5.8" height="38.4" fill="rgb(52,58,70)"/>
+<rect x="216" y="294.4" width="5.8" height="38.4" fill="rgb(52,58,70)"/>
+<rect x="240" y="294.4" width="5.8" height="38.4" fill="rgb(52,58,70)"/>
+<rect x="264" y="294.4" width="5.8" height="38.4" fill="rgb(52,58,70)"/>
+<rect x="288" y="294.4" width="5.8" height="38.4" fill="rgb(52,58,70)"/>
+<rect x="312" y="294.4" width="5.8" height="38.4" fill="rgb(52,58,70)"/>
+<rect x="172.8" y="128" width="134.4" height="32" fill="rgb(235,220,200)"/>
+<rect x="183.6" y="137.6" width="112.9" height="4.5" fill="rgb(52,58,70)"/>
+<rect x="183.6" y="147.2" width="112.9" height="4.5" fill="rgb(52,58,70)"/>
+<g><rect x="297.6" y="12.8" width="124.8" height="89.6" fill="none" stroke="#ff2d55" stroke-width="2" stroke-dasharray="6 3"/><text x="299.6" y="115.4" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#ff2d55" stroke="#fff" stroke-width="3" paint-order="stroke">det_1 · architectural_element · Corner Dome</text></g>
+<g><rect x="211.2" y="192" width="57.6" height="64" fill="none" stroke="#ff2d55" stroke-width="2" stroke-dasharray="6 3"/><text x="213.2" y="188" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#ff2d55" stroke="#fff" stroke-width="3" paint-order="stroke">det_2 · mask · Carved Mask (Mascaron)</text></g>
+<g><rect x="144" y="294.4" width="192" height="38.4" fill="none" stroke="#ff2d55" stroke-width="2" stroke-dasharray="6 3"/><text x="146" y="290.4" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#ff2d55" stroke="#fff" stroke-width="3" paint-order="stroke">det_3 · architectural_element · Wrought-Iron Balcony</text></g>
+<g><rect x="172.8" y="128" width="134.4" height="32" fill="none" stroke="#ff2d55" stroke-width="2" stroke-dasharray="6 3"/><text x="174.8" y="124" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#ff2d55" stroke="#fff" stroke-width="3" paint-order="stroke">det_4 · inscription · Dated Inscription: “ÉPÜLT 1912”</text></g>
+<rect x="0" y="614" width="480" height="26" fill="rgba(0,0,0,0.6)"/><text x="8" y="631" font-family="system-ui,sans-serif" font-size="12" fill="#fff">Palatul Lloyd · Cetate · expected: Eclectic</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 640" width="480" height="640">
+<title>Park and trees (negative) · n/a · expected: null (NO_MATCH)</title>
+<rect x="0" y="0" width="480" height="352" fill="rgb(150,196,235)"/>
+<rect x="0" y="352" width="480" height="288" fill="rgb(96,160,80)"/>
+<rect x="88.8" y="294.4" width="14.4" height="115.2" fill="rgb(110,80,50)"/>
+<ellipse cx="96" cy="246.4" rx="72" ry="86.4" fill="rgb(50,120,60)"/>
+<rect x="269.8" y="276.5" width="17.3" height="138.2" fill="rgb(110,80,50)"/>
+<ellipse cx="278.4" cy="218.9" rx="86.4" ry="103.7" fill="rgb(50,120,60)"/>
+<rect x="401.8" y="295.7" width="12.5" height="99.8" fill="rgb(110,80,50)"/>
+<ellipse cx="408" cy="254.1" rx="62.4" ry="74.9" fill="rgb(50,120,60)"/>
+
+<rect x="0" y="614" width="480" height="26" fill="rgba(0,0,0,0.6)"/><text x="8" y="631" font-family="system-ui,sans-serif" font-size="12" fill="#fff">Park and trees (negative) · n/a · expected: null (NO_MATCH)</text>
+</svg>

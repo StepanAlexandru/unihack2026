@@ -1,0 +1,53 @@
+{
+  "style": "Secession",
+  "confidence": 0.89,
+  "details": [
+    {
+      "id": "det_1",
+      "label": "Floral Secession Ornament",
+      "type": "architectural_element",
+      "bbox": [
+        0.3,
+        0.16,
+        0.4,
+        0.1
+      ],
+      "raw_text": null,
+      "translated_text": null
+    },
+    {
+      "id": "det_2",
+      "label": "Curved Gable",
+      "type": "architectural_element",
+      "bbox": [
+        0.36,
+        0.04,
+        0.28,
+        0.1
+      ],
+      "raw_text": null,
+      "translated_text": null
+    },
+    {
+      "id": "det_3",
+      "label": "Dated Inscription",
+      "type": "inscription",
+      "bbox": [
+        0.38,
+        0.28,
+        0.24,
+        0.05
+      ],
+      "raw_text": "ÉPÜLT 1910",
+      "translated_text": "Built in 1910"
+    }
+  ],
+  "narration": {
+    "text": "You are looking at Casa Brück on Piața Unirii, designed by László Székely around 1910. Notice the curving lines and plant ornaments: Secession architects used them to give Timișoara's new buildings a bold, modern personality.",
+    "audio_url": "",
+    "duration_s": 14,
+    "building_name": "Casa Brück",
+    "history": "In the early 1900s Timișoara expanded quickly, and Secession buildings like this one transformed the squares of the old Cetate district.",
+    "why_it_matters": "Casa Brück is one of the best-known Secession facades in Timișoara's historic centre."
+  }
+}

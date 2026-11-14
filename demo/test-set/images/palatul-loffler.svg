@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 640" width="480" height="640">
+<title>Palatul Löffler · Cetate · expected: Secession</title>
+<rect x="0" y="0" width="480" height="40.6" fill="rgb(150,196,235)"/>
+<rect x="0" y="40" width="480" height="40.6" fill="rgb(154,198,236)"/>
+<rect x="0" y="80" width="480" height="40.6" fill="rgb(159,201,236)"/>
+<rect x="0" y="120" width="480" height="40.6" fill="rgb(163,203,237)"/>
+<rect x="0" y="160" width="480" height="40.6" fill="rgb(167,206,238)"/>
+<rect x="0" y="200" width="480" height="40.6" fill="rgb(171,208,239)"/>
+<rect x="0" y="240" width="480" height="40.6" fill="rgb(176,210,239)"/>
+<rect x="0" y="280" width="480" height="40.6" fill="rgb(180,213,240)"/>
+<rect x="0" y="320" width="480" height="40.6" fill="rgb(184,215,241)"/>
+<rect x="0" y="360" width="480" height="40.6" fill="rgb(188,218,242)"/>
+<rect x="0" y="400" width="480" height="40.6" fill="rgb(193,220,242)"/>
+<rect x="0" y="440" width="480" height="40.6" fill="rgb(197,222,243)"/>
+<rect x="0" y="480" width="480" height="40.6" fill="rgb(201,225,244)"/>
+<rect x="0" y="520" width="480" height="40.6" fill="rgb(205,227,245)"/>
+<rect x="0" y="560" width="480" height="40.6" fill="rgb(210,230,245)"/>
+<rect x="0" y="600" width="480" height="40.6" fill="rgb(214,232,246)"/>
+<rect x="28.8" y="64" width="422.4" height="576" fill="rgb(236,214,168)"/>
+<rect x="24" y="64" width="432" height="12.8" fill="rgb(180,120,70)"/>
+<rect x="28.8" y="435.2" width="422.4" height="7.7" fill="rgb(180,120,70)"/>
+<rect x="77.5" y="114.4" width="51.4" height="48" fill="rgb(70,96,120)"/>
+<rect x="168.7" y="114.4" width="51.4" height="48" fill="rgb(70,96,120)"/>
+<rect x="259.9" y="114.4" width="51.4" height="48" fill="rgb(52,58,70)"/>
+<rect x="351.1" y="114.4" width="51.4" height="48" fill="rgb(70,96,120)"/>
+<rect x="77.5" y="194.4" width="51.4" height="48" fill="rgb(70,96,120)"/>
+<rect x="168.7" y="194.4" width="51.4" height="48" fill="rgb(70,96,120)"/>
+<rect x="259.9" y="194.4" width="51.4" height="48" fill="rgb(70,96,120)"/>
+<rect x="351.1" y="194.4" width="51.4" height="48" fill="rgb(70,96,120)"/>
+<rect x="77.5" y="274.4" width="51.4" height="48" fill="rgb(70,96,120)"/>
+<rect x="168.7" y="274.4" width="51.4" height="48" fill="rgb(52,58,70)"/>
+<rect x="259.9" y="274.4" width="51.4" height="48" fill="rgb(70,96,120)"/>
+<rect x="351.1" y="274.4" width="51.4" height="48" fill="rgb(70,96,120)"/>
+<rect x="77.5" y="354.4" width="51.4" height="48" fill="rgb(70,96,120)"/>
+<rect x="168.7" y="354.4" width="51.4" height="48" fill="rgb(70,96,120)"/>
+<rect x="259.9" y="354.4" width="51.4" height="48" fill="rgb(70,96,120)"/>
+<rect x="351.1" y="354.4" width="51.4" height="48" fill="rgb(52,58,70)"/>
+<rect x="28.8" y="620.8" width="422.4" height="19.2" fill="rgb(120,116,110)"/>
+<polygon points="144,96 240,19.2 336,96" fill="rgb(180,120,70)"/>
+<polygon points="172.8,88.3 240,34.6 307.2,88.3" fill="rgb(64,138,118)"/>
+<rect x="96" y="192" width="86.4" height="51.2" fill="rgb(64,138,118)"/>
+<ellipse cx="106.8" cy="217.6" rx="8.2" ry="15.4" fill="rgb(180,120,70)"/>
+<ellipse cx="128.4" cy="217.6" rx="8.2" ry="15.4" fill="rgb(180,120,70)"/>
+<ellipse cx="150" cy="217.6" rx="8.2" ry="15.4" fill="rgb(180,120,70)"/>
+<ellipse cx="171.6" cy="217.6" rx="8.2" ry="15.4" fill="rgb(180,120,70)"/>
+<rect x="192" y="115.2" width="96" height="32" fill="rgb(180,120,70)"/>
+<rect x="199.7" y="124.8" width="80.6" height="4.5" fill="rgb(52,58,70)"/>
+<rect x="199.7" y="134.4" width="80.6" height="4.5" fill="rgb(52,58,70)"/>
+<g><rect x="144" y="19.2" width="192" height="76.8" fill="none" stroke="#ff2d55" stroke-width="2" stroke-dasharray="6 3"/><text x="146" y="109" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#ff2d55" stroke="#fff" stroke-width="3" paint-order="stroke">det_1 · architectural_element · Stepped Gable</text></g>
+<g><rect x="96" y="192" width="86.4" height="51.2" fill="none" stroke="#ff2d55" stroke-width="2" stroke-dasharray="6 3"/><text x="98" y="188" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#ff2d55" stroke="#fff" stroke-width="3" paint-order="stroke">det_2 · architectural_element · Floral Ornament</text></g>
+<g><rect x="192" y="115.2" width="96" height="32" fill="none" stroke="#ff2d55" stroke-width="2" stroke-dasharray="6 3"/><text x="194" y="111.2" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#ff2d55" stroke="#fff" stroke-width="3" paint-order="stroke">det_3 · inscription · German Date Inscription: “ERBAUT 1912”</text></g>
+<rect x="0" y="614" width="480" height="26" fill="rgba(0,0,0,0.6)"/><text x="8" y="631" font-family="system-ui,sans-serif" font-size="12" fill="#fff">Palatul Löffler · Cetate · expected: Secession</text>
+</svg>

@@ -1,0 +1,66 @@
+{
+  "style": "Eclectic",
+  "confidence": 0.82,
+  "details": [
+    {
+      "id": "det_1",
+      "label": "Corner Dome",
+      "type": "architectural_element",
+      "bbox": [
+        0.62,
+        0.02,
+        0.26,
+        0.14
+      ],
+      "raw_text": null,
+      "translated_text": null
+    },
+    {
+      "id": "det_2",
+      "label": "Carved Mask (Mascaron)",
+      "type": "mask",
+      "bbox": [
+        0.44,
+        0.3,
+        0.12,
+        0.1
+      ],
+      "raw_text": null,
+      "translated_text": null
+    },
+    {
+      "id": "det_3",
+      "label": "Wrought-Iron Balcony",
+      "type": "architectural_element",
+      "bbox": [
+        0.3,
+        0.46,
+        0.4,
+        0.06
+      ],
+      "raw_text": null,
+      "translated_text": null
+    },
+    {
+      "id": "det_4",
+      "label": "Dated Inscription",
+      "type": "inscription",
+      "bbox": [
+        0.36,
+        0.2,
+        0.28,
+        0.05
+      ],
+      "raw_text": "ÉPÜLT 1912",
+      "translated_text": "Construit în 1912"
+    }
+  ],
+  "narration": {
+    "text": "Acesta este Palatul Lloyd din Piața Victoriei, construit între 1910 și 1912 după planurile lui Lipót Baumhorn. Fațada îmbină forme istorice cu ornamente Secession, un amestec eclectic tipic care exprima ambițiile comerciale ale orașului în plină dezvoltare.",
+    "audio_url": "",
+    "duration_s": 14.8,
+    "building_name": "Palatul Lloyd",
+    "history": "Piața Victoriei s-a conturat la începutul secolului al XX-lea, după demolarea zidurilor vechii cetăți, iar palatele ei au fost ridicate în doar câțiva ani.",
+    "why_it_matters": "Palatul Lloyd este un reper al Pieței Victoriei, principala promenadă a orașului."
+  }
+}

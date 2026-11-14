@@ -1,0 +1,37 @@
+{
+  "_source": "Copied verbatim from docs/contracts.md v1.0.0 §4 and §5. Canonical mocks: do not edit without editing the contract.",
+  "vision_result": {
+    "style": "Secession",
+    "confidence": 0.87,
+    "details": [
+      {
+        "id": "det_1",
+        "label": "Secession Mask (Mascaron)",
+        "type": "mask",
+        "bbox": [0.32, 0.18, 0.14, 0.16],
+        "raw_text": null
+      },
+      {
+        "id": "det_2",
+        "label": "Dated Inscription",
+        "type": "inscription",
+        "bbox": [0.40, 0.62, 0.22, 0.06],
+        "raw_text": "ANNO 1910"
+      }
+    ]
+  },
+  "narration_result_en": {
+    "text": "This facade belongs to the Secession style that reshaped Timișoara in the early twentieth century. Look for the carved mask above the window: Secession architects used faces and flowing plant motifs to give buildings personality and civic pride.",
+    "audio_url": "/audio/cache/3f9a1c7e.mp3",
+    "duration_s": 14.5,
+    "enrichments": {
+      "building_name": null,
+      "architect": null,
+      "historical_context": "In the early 1900s, as Timișoara grew beyond its old fortress walls, many new apartment buildings adopted the Secession style that was popular across Austria-Hungary.",
+      "why_it_matters": "Secession facades are a defining part of Timișoara's architectural identity.",
+      "translations": [
+        { "detail_id": "det_2", "original": "ANNO 1910", "translated": "In the year 1910" }
+      ]
+    }
+  }
+}

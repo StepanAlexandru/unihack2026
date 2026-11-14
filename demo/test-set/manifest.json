@@ -1,0 +1,488 @@
+{
+  "version": "1.0.0",
+  "contract_version": "1.1.0",
+  "description": "Labeled Timișoara facade test set for the M2 benchmark and the M4 offline demo cache. Districts: Cetate, Fabric, Iosefin.",
+  "ground_truth_status": "DRAFT. `expected_style` is the team's labeling target. `expected_details` (bbox + raw_text) describe the SYNTHETIC CARD in `image` / `card_svg`, NOT a surveyed facade. Inscription texts on the cards are illustrative. When a real photo is added under `photo`, re-annotate its details against that photo. `metadata` facts are unverified until M3's knowledge base confirms them (`verified: true`).",
+  "annotation_rules": {
+    "bbox": "[x, y, w, h] normalized 0..1, (x, y) = top-left, relative to the image exactly as stored (contracts §3).",
+    "acceptable_styles": "A prediction counts as correct if it is in acceptable_styles. `null` in the list means 'no style' is also acceptable.",
+    "negatives": "scene != 'facade' or expected_style null: the correct M2 answer is style: null (M4 returns NO_MATCH).",
+    "raw_text_lang": "Language of raw_text as written on the facade: hu | de | la | ro."
+  },
+  "benchmark": {
+    "style_metric": "top-1 accuracy against acceptable_styles, over all cases (negatives included)",
+    "detail_metric": "per-type recall at IoU >= 0.3 against expected_details (real photos only; synthetic cards are a smoke test)",
+    "how_to_run": "M2: for each case, run `npm run try -- ../demo/test-set/<photo or image>` and compare against this file."
+  },
+  "cases": [
+    {
+      "id": "casa-bruck",
+      "name": "Casa Brück",
+      "aliases": ["Brück House"],
+      "district": "Cetate",
+      "location": "Piața Unirii",
+      "scene": "facade",
+      "expected_style": "Secession",
+      "acceptable_styles": ["Secession"],
+      "image": "images/casa-bruck.jpg",
+      "card_svg": "images/casa-bruck.svg",
+      "photo": null,
+      "hero": true,
+      "metadata": { "architect": "László Székely", "built": "1910", "verified": false },
+      "expected_details": [
+        { "id": "det_1", "label": "Floral Secession Ornament", "type": "architectural_element", "bbox": [0.30, 0.16, 0.40, 0.10], "raw_text": null },
+        { "id": "det_2", "label": "Curved Gable", "type": "architectural_element", "bbox": [0.36, 0.04, 0.28, 0.10], "raw_text": null },
+        { "id": "det_3", "label": "Dated Inscription", "type": "inscription", "bbox": [0.38, 0.28, 0.24, 0.05], "raw_text": "ÉPÜLT 1910", "raw_text_lang": "hu", "translations": { "en": "Built in 1910", "ro": "Construit în 1910" } }
+      ]
+    },
+    {
+      "id": "palatul-baroc",
+      "name": "Palatul Baroc",
+      "aliases": ["Baroque Palace", "Muzeul Național de Artă Timișoara"],
+      "district": "Cetate",
+      "location": "Piața Unirii",
+      "scene": "facade",
+      "expected_style": "Baroque",
+      "acceptable_styles": ["Baroque"],
+      "image": "images/palatul-baroc.jpg",
+      "card_svg": "images/palatul-baroc.svg",
+      "photo": null,
+      "hero": true,
+      "metadata": { "architect": null, "built": "18th century", "verified": false },
+      "expected_details": [
+        { "id": "det_1", "label": "Baroque Portal", "type": "architectural_element", "bbox": [0.42, 0.74, 0.16, 0.24], "raw_text": null },
+        { "id": "det_2", "label": "Window Pediment", "type": "architectural_element", "bbox": [0.14, 0.34, 0.12, 0.06], "raw_text": null },
+        { "id": "det_3", "label": "Museum Plaque", "type": "plaque", "bbox": [0.62, 0.78, 0.12, 0.06], "raw_text": "MUZEUL NAȚIONAL DE ARTĂ", "raw_text_lang": "ro", "translations": { "en": "National Museum of Art", "ro": "Muzeul Național de Artă" } }
+      ]
+    },
+    {
+      "id": "domul-catolic",
+      "name": "Domul Romano-Catolic Sfântul Gheorghe",
+      "aliases": ["St. George's Cathedral", "Domul din Piața Unirii"],
+      "district": "Cetate",
+      "location": "Piața Unirii",
+      "scene": "facade",
+      "expected_style": "Baroque",
+      "acceptable_styles": ["Baroque"],
+      "image": "images/domul-catolic.jpg",
+      "card_svg": "images/domul-catolic.svg",
+      "photo": null,
+      "hero": true,
+      "metadata": { "architect": "Joseph Emanuel Fischer von Erlach (design)", "built": "1736-1774", "verified": false },
+      "expected_details": [
+        { "id": "det_1", "label": "Twin Bell Towers", "type": "architectural_element", "bbox": [0.10, 0.02, 0.80, 0.22], "raw_text": null },
+        { "id": "det_2", "label": "Statue Niche", "type": "architectural_element", "bbox": [0.44, 0.36, 0.12, 0.16], "raw_text": null },
+        { "id": "det_3", "label": "Main Portal", "type": "architectural_element", "bbox": [0.40, 0.72, 0.20, 0.26], "raw_text": null },
+        { "id": "det_4", "label": "Latin Date Inscription", "type": "inscription", "bbox": [0.38, 0.62, 0.24, 0.05], "raw_text": "ANNO 1774", "raw_text_lang": "la", "translations": { "en": "In the year 1774", "ro": "În anul 1774" } }
+      ]
+    },
+    {
+      "id": "vicariatul-sarbesc",
+      "name": "Vicariatul Ortodox Sârb",
+      "aliases": ["Serbian Vicarage", "Vicariatul Sârbesc"],
+      "district": "Cetate",
+      "location": "Piața Unirii",
+      "scene": "facade",
+      "expected_style": "Eclectic",
+      "acceptable_styles": ["Eclectic", "Secession"],
+      "image": "images/vicariatul-sarbesc.jpg",
+      "card_svg": "images/vicariatul-sarbesc.svg",
+      "photo": null,
+      "hero": false,
+      "metadata": { "architect": null, "built": null, "verified": false },
+      "expected_details": [
+        { "id": "det_1", "label": "Mosaic Panel", "type": "architectural_element", "bbox": [0.36, 0.14, 0.28, 0.14], "raw_text": null },
+        { "id": "det_2", "label": "Arched Windows", "type": "architectural_element", "bbox": [0.14, 0.40, 0.72, 0.12], "raw_text": null }
+      ]
+    },
+    {
+      "id": "palatul-lloyd",
+      "name": "Palatul Lloyd",
+      "aliases": ["Lloyd Palace"],
+      "district": "Cetate",
+      "location": "Piața Victoriei",
+      "scene": "facade",
+      "expected_style": "Eclectic",
+      "acceptable_styles": ["Eclectic", "Secession"],
+      "image": "images/palatul-lloyd.jpg",
+      "card_svg": "images/palatul-lloyd.svg",
+      "photo": null,
+      "hero": true,
+      "metadata": { "architect": "Lipót Baumhorn", "built": "1910-1912", "verified": false },
+      "expected_details": [
+        { "id": "det_1", "label": "Corner Dome", "type": "architectural_element", "bbox": [0.62, 0.02, 0.26, 0.14], "raw_text": null },
+        { "id": "det_2", "label": "Carved Mask (Mascaron)", "type": "mask", "bbox": [0.44, 0.30, 0.12, 0.10], "raw_text": null },
+        { "id": "det_3", "label": "Wrought-Iron Balcony", "type": "architectural_element", "bbox": [0.30, 0.46, 0.40, 0.06], "raw_text": null },
+        { "id": "det_4", "label": "Dated Inscription", "type": "inscription", "bbox": [0.36, 0.20, 0.28, 0.05], "raw_text": "ÉPÜLT 1912", "raw_text_lang": "hu", "translations": { "en": "Built in 1912", "ro": "Construit în 1912" } }
+      ]
+    },
+    {
+      "id": "palatul-dauerbach",
+      "name": "Palatul Dauerbach",
+      "aliases": ["Dauerbach Palace"],
+      "district": "Cetate",
+      "location": "Piața Victoriei",
+      "scene": "facade",
+      "expected_style": "Secession",
+      "acceptable_styles": ["Secession", "Eclectic"],
+      "image": "images/palatul-dauerbach.jpg",
+      "card_svg": "images/palatul-dauerbach.svg",
+      "photo": null,
+      "hero": false,
+      "metadata": { "architect": null, "built": null, "verified": false },
+      "expected_details": [
+        { "id": "det_1", "label": "Secession Relief Band", "type": "architectural_element", "bbox": [0.12, 0.22, 0.76, 0.06], "raw_text": null },
+        { "id": "det_2", "label": "Female Mask (Mascaron)", "type": "mask", "bbox": [0.44, 0.34, 0.12, 0.10], "raw_text": null }
+      ]
+    },
+    {
+      "id": "palatul-loffler",
+      "name": "Palatul Löffler",
+      "aliases": ["Löffler Palace"],
+      "district": "Cetate",
+      "location": "Piața Victoriei",
+      "scene": "facade",
+      "expected_style": "Secession",
+      "acceptable_styles": ["Secession"],
+      "image": "images/palatul-loffler.jpg",
+      "card_svg": "images/palatul-loffler.svg",
+      "photo": null,
+      "hero": false,
+      "metadata": { "architect": null, "built": null, "verified": false },
+      "expected_details": [
+        { "id": "det_1", "label": "Stepped Gable", "type": "architectural_element", "bbox": [0.30, 0.03, 0.40, 0.12], "raw_text": null },
+        { "id": "det_2", "label": "Floral Ornament", "type": "architectural_element", "bbox": [0.20, 0.30, 0.18, 0.08], "raw_text": null },
+        { "id": "det_3", "label": "German Date Inscription", "type": "inscription", "bbox": [0.40, 0.18, 0.20, 0.05], "raw_text": "ERBAUT 1912", "raw_text_lang": "de", "translations": { "en": "Built in 1912", "ro": "Construit în 1912" } }
+      ]
+    },
+    {
+      "id": "palatul-miksa-steiner",
+      "name": "Palatul Miksa Steiner",
+      "aliases": ["Steiner Palace"],
+      "district": "Cetate",
+      "location": null,
+      "scene": "facade",
+      "expected_style": "Secession",
+      "acceptable_styles": ["Secession"],
+      "image": "images/palatul-miksa-steiner.jpg",
+      "card_svg": "images/palatul-miksa-steiner.svg",
+      "photo": null,
+      "hero": false,
+      "metadata": { "architect": null, "built": null, "verified": false },
+      "expected_details": [
+        { "id": "det_1", "label": "Ceramic Tile Frieze", "type": "architectural_element", "bbox": [0.10, 0.12, 0.80, 0.05], "raw_text": null },
+        { "id": "det_2", "label": "Lion Head Ornament", "type": "lion_head", "bbox": [0.46, 0.66, 0.08, 0.07], "raw_text": null },
+        { "id": "det_3", "label": "Bay Window", "type": "architectural_element", "bbox": [0.62, 0.26, 0.20, 0.30], "raw_text": null }
+      ]
+    },
+    {
+      "id": "casa-stock-im-eisen",
+      "name": "Casa cu Trunchiul de Fier (Stock im Eisen)",
+      "aliases": ["Casa cu Pomul Breslelor", "Stock im Eisen", "Trunchiul cu cuie"],
+      "district": "Cetate",
+      "location": null,
+      "scene": "facade",
+      "expected_style": "Eclectic",
+      "acceptable_styles": ["Eclectic", "Neoclassical", "Baroque"],
+      "image": "images/casa-stock-im-eisen.jpg",
+      "card_svg": "images/casa-stock-im-eisen.svg",
+      "photo": null,
+      "hero": false,
+      "notes": "Key detail is the nail-studded trunk kept on the corner (craftsmen's tradition). Building style needs on-site confirmation.",
+      "metadata": { "architect": null, "built": null, "verified": false },
+      "expected_details": [
+        { "id": "det_1", "label": "Nail-Studded Trunk (Stock im Eisen)", "type": "guild_symbol", "bbox": [0.08, 0.60, 0.10, 0.20], "raw_text": null },
+        { "id": "det_2", "label": "Information Plaque", "type": "plaque", "bbox": [0.20, 0.64, 0.12, 0.06], "raw_text": "STOCK IM EISEN", "raw_text_lang": "de", "translations": { "en": "Trunk in iron", "ro": "Trunchi în fier" } }
+      ]
+    },
+    {
+      "id": "primaria-veche",
+      "name": "Primăria Veche",
+      "aliases": ["Old Town Hall"],
+      "district": "Cetate",
+      "location": "Piața Libertății",
+      "scene": "facade",
+      "expected_style": "Baroque",
+      "acceptable_styles": ["Baroque", "Neoclassical"],
+      "image": "images/primaria-veche.jpg",
+      "card_svg": "images/primaria-veche.svg",
+      "photo": null,
+      "hero": false,
+      "metadata": { "architect": null, "built": "18th century", "verified": false },
+      "expected_details": [
+        { "id": "det_1", "label": "Clock Tower", "type": "architectural_element", "bbox": [0.42, 0.02, 0.16, 0.20], "raw_text": null },
+        { "id": "det_2", "label": "Coat of Arms", "type": "guild_symbol", "bbox": [0.44, 0.28, 0.12, 0.10], "raw_text": null },
+        { "id": "det_3", "label": "Historic Monument Plaque", "type": "plaque", "bbox": [0.64, 0.76, 0.12, 0.06], "raw_text": "MONUMENT ISTORIC", "raw_text_lang": "ro", "translations": { "en": "Historic monument", "ro": "Monument istoric" } }
+      ]
+    },
+    {
+      "id": "bastionul-theresia",
+      "name": "Bastionul Maria Theresia",
+      "aliases": ["Theresia Bastion"],
+      "district": "Cetate",
+      "location": null,
+      "scene": "facade",
+      "expected_style": "Baroque",
+      "acceptable_styles": ["Baroque", "Neoclassical"],
+      "image": "images/bastionul-theresia.jpg",
+      "card_svg": "images/bastionul-theresia.svg",
+      "photo": null,
+      "hero": false,
+      "notes": "18th-century fortification remnant; brick vaults rather than an ornamented facade. Hard case for style.",
+      "metadata": { "architect": null, "built": "18th century", "verified": false },
+      "expected_details": [
+        { "id": "det_1", "label": "Brick Vaulted Gate", "type": "architectural_element", "bbox": [0.38, 0.60, 0.24, 0.36], "raw_text": null }
+      ]
+    },
+    {
+      "id": "catedrala-mitropolitana",
+      "name": "Catedrala Mitropolitană",
+      "aliases": ["Metropolitan Cathedral"],
+      "district": "Cetate",
+      "location": "Piața Victoriei",
+      "scene": "facade",
+      "expected_style": null,
+      "acceptable_styles": [null],
+      "image": "images/catedrala-mitropolitana.jpg",
+      "card_svg": "images/catedrala-mitropolitana.svg",
+      "photo": null,
+      "hero": false,
+      "notes": "NEGATIVE for style: Neo-Romanian / Neo-Byzantine is outside the 5 v1 styles. Correct answer: style null -> NO_MATCH.",
+      "metadata": { "architect": "Ion Trajanescu", "built": "1936-1946", "verified": false },
+      "expected_details": []
+    },
+    {
+      "id": "palatul-stefania",
+      "name": "Palatul Ștefania",
+      "aliases": ["Stefania Palace"],
+      "district": "Fabric",
+      "location": null,
+      "scene": "facade",
+      "expected_style": "Secession",
+      "acceptable_styles": ["Secession"],
+      "image": "images/palatul-stefania.jpg",
+      "card_svg": "images/palatul-stefania.svg",
+      "photo": null,
+      "hero": false,
+      "metadata": { "architect": null, "built": null, "verified": false },
+      "expected_details": [
+        { "id": "det_1", "label": "Corner Turret", "type": "architectural_element", "bbox": [0.70, 0.02, 0.18, 0.20], "raw_text": null },
+        { "id": "det_2", "label": "Carved Mask (Mascaron)", "type": "mask", "bbox": [0.30, 0.32, 0.10, 0.09], "raw_text": null }
+      ]
+    },
+    {
+      "id": "baia-neptun",
+      "name": "Baia Neptun",
+      "aliases": ["Neptun Baths"],
+      "district": "Fabric",
+      "location": null,
+      "scene": "facade",
+      "expected_style": "Secession",
+      "acceptable_styles": ["Secession"],
+      "image": "images/baia-neptun.jpg",
+      "card_svg": "images/baia-neptun.svg",
+      "photo": null,
+      "hero": true,
+      "metadata": { "architect": "László Székely", "built": "1912-1914", "verified": false },
+      "expected_details": [
+        { "id": "det_1", "label": "Decorative Roofline", "type": "architectural_element", "bbox": [0.14, 0.02, 0.72, 0.14], "raw_text": null },
+        { "id": "det_2", "label": "Arched Entrance", "type": "architectural_element", "bbox": [0.38, 0.66, 0.24, 0.32], "raw_text": null },
+        { "id": "det_3", "label": "Name Inscription", "type": "inscription", "bbox": [0.34, 0.56, 0.32, 0.06], "raw_text": "NEPTUN FÜRDŐ", "raw_text_lang": "hu", "translations": { "en": "Neptune Baths", "ro": "Baia Neptun" } }
+      ]
+    },
+    {
+      "id": "sinagoga-fabric",
+      "name": "Sinagoga din Fabric",
+      "aliases": ["Fabric Synagogue"],
+      "district": "Fabric",
+      "location": null,
+      "scene": "facade",
+      "expected_style": "Eclectic",
+      "acceptable_styles": ["Eclectic"],
+      "image": "images/sinagoga-fabric.jpg",
+      "card_svg": "images/sinagoga-fabric.svg",
+      "photo": null,
+      "hero": true,
+      "metadata": { "architect": "Lipót Baumhorn", "built": "1899", "verified": false },
+      "expected_details": [
+        { "id": "det_1", "label": "Central Dome", "type": "architectural_element", "bbox": [0.34, 0.02, 0.32, 0.16], "raw_text": null },
+        { "id": "det_2", "label": "Moorish Horseshoe Arches", "type": "architectural_element", "bbox": [0.16, 0.44, 0.68, 0.14], "raw_text": null },
+        { "id": "det_3", "label": "Rose Window", "type": "architectural_element", "bbox": [0.42, 0.24, 0.16, 0.12], "raw_text": null }
+      ]
+    },
+    {
+      "id": "biserica-millenium",
+      "name": "Biserica Millenium",
+      "aliases": ["Millennium Church"],
+      "district": "Fabric",
+      "location": "Piața Romanilor",
+      "scene": "facade",
+      "expected_style": "Eclectic",
+      "acceptable_styles": ["Eclectic"],
+      "image": "images/biserica-millenium.jpg",
+      "card_svg": "images/biserica-millenium.svg",
+      "photo": null,
+      "hero": false,
+      "metadata": { "architect": null, "built": null, "verified": false },
+      "expected_details": [
+        { "id": "det_1", "label": "Twin Towers", "type": "architectural_element", "bbox": [0.12, 0.02, 0.76, 0.26], "raw_text": null },
+        { "id": "det_2", "label": "Round-Arched Portal", "type": "architectural_element", "bbox": [0.40, 0.70, 0.20, 0.28], "raw_text": null }
+      ]
+    },
+    {
+      "id": "casa-cu-pauni",
+      "name": "Casa cu Păuni",
+      "aliases": ["House with Peacocks"],
+      "district": "Fabric",
+      "location": null,
+      "scene": "facade",
+      "expected_style": "Secession",
+      "acceptable_styles": ["Secession"],
+      "image": "images/casa-cu-pauni.jpg",
+      "card_svg": "images/casa-cu-pauni.svg",
+      "photo": null,
+      "hero": false,
+      "metadata": { "architect": null, "built": null, "verified": false },
+      "expected_details": [
+        { "id": "det_1", "label": "Peacock Relief (left)", "type": "architectural_element", "bbox": [0.14, 0.18, 0.18, 0.12], "raw_text": null },
+        { "id": "det_2", "label": "Peacock Relief (right)", "type": "architectural_element", "bbox": [0.68, 0.18, 0.18, 0.12], "raw_text": null },
+        { "id": "det_3", "label": "Carved Mask (Mascaron)", "type": "mask", "bbox": [0.45, 0.20, 0.10, 0.09], "raw_text": null }
+      ]
+    },
+    {
+      "id": "fabric-guild-house",
+      "name": "Fabric guild-sign house (generic)",
+      "aliases": [],
+      "district": "Fabric",
+      "location": null,
+      "scene": "facade",
+      "expected_style": "Eclectic",
+      "acceptable_styles": ["Eclectic", "Neoclassical"],
+      "image": "images/fabric-guild-house.jpg",
+      "card_svg": "images/fabric-guild-house.svg",
+      "photo": null,
+      "hero": false,
+      "notes": "Generic control case for guild_symbol + lion_head detection; not a specific address.",
+      "metadata": { "architect": null, "built": null, "verified": false },
+      "expected_details": [
+        { "id": "det_1", "label": "Hanging Guild Sign", "type": "guild_symbol", "bbox": [0.12, 0.48, 0.14, 0.12], "raw_text": null },
+        { "id": "det_2", "label": "Lion Head Door Knocker", "type": "lion_head", "bbox": [0.47, 0.80, 0.06, 0.05], "raw_text": null },
+        { "id": "det_3", "label": "German Date Inscription", "type": "inscription", "bbox": [0.36, 0.38, 0.28, 0.05], "raw_text": "ERBAUT 1896", "raw_text_lang": "de", "translations": { "en": "Built in 1896", "ro": "Construit în 1896" } }
+      ]
+    },
+    {
+      "id": "turnul-de-apa-iosefin",
+      "name": "Turnul de Apă din Iosefin",
+      "aliases": ["Iosefin Water Tower"],
+      "district": "Iosefin",
+      "location": null,
+      "scene": "facade",
+      "expected_style": "Eclectic",
+      "acceptable_styles": ["Eclectic", "Secession"],
+      "image": "images/turnul-de-apa-iosefin.jpg",
+      "card_svg": "images/turnul-de-apa-iosefin.svg",
+      "photo": null,
+      "hero": false,
+      "notes": "Tall, narrow subject: stresses bbox handling on portrait framing.",
+      "metadata": { "architect": null, "built": null, "verified": false },
+      "expected_details": [
+        { "id": "det_1", "label": "Tower Lantern", "type": "architectural_element", "bbox": [0.36, 0.02, 0.28, 0.18], "raw_text": null },
+        { "id": "det_2", "label": "Arched Windows", "type": "architectural_element", "bbox": [0.38, 0.40, 0.24, 0.20], "raw_text": null }
+      ]
+    },
+    {
+      "id": "iosefin-secession-tenement",
+      "name": "Iosefin Secession tenement (generic)",
+      "aliases": [],
+      "district": "Iosefin",
+      "location": null,
+      "scene": "facade",
+      "expected_style": "Secession",
+      "acceptable_styles": ["Secession"],
+      "image": "images/iosefin-secession-tenement.jpg",
+      "card_svg": "images/iosefin-secession-tenement.svg",
+      "photo": null,
+      "hero": false,
+      "notes": "Generic control case typical of Iosefin's early-1900s apartment houses; not a specific address.",
+      "metadata": { "architect": null, "built": null, "verified": false },
+      "expected_details": [
+        { "id": "det_1", "label": "Carved Mask (Mascaron)", "type": "mask", "bbox": [0.44, 0.22, 0.12, 0.10], "raw_text": null },
+        { "id": "det_2", "label": "Lion Head Ornament", "type": "lion_head", "bbox": [0.20, 0.44, 0.08, 0.07], "raw_text": null },
+        { "id": "det_3", "label": "Latin Date Inscription", "type": "inscription", "bbox": [0.38, 0.12, 0.24, 0.05], "raw_text": "ANNO 1908", "raw_text_lang": "la", "translations": { "en": "In the year 1908", "ro": "În anul 1908" } }
+      ]
+    },
+    {
+      "id": "iosefin-neoclassical-portico",
+      "name": "Neoclassical portico (generic control)",
+      "aliases": [],
+      "district": "Iosefin",
+      "location": null,
+      "scene": "facade",
+      "expected_style": "Neoclassical",
+      "acceptable_styles": ["Neoclassical"],
+      "image": "images/iosefin-neoclassical-portico.jpg",
+      "card_svg": "images/iosefin-neoclassical-portico.svg",
+      "photo": null,
+      "hero": false,
+      "notes": "Synthetic control so every v1 style has at least one case. Replace with a real photo when the team picks one.",
+      "metadata": { "architect": null, "built": null, "verified": false },
+      "expected_details": [
+        { "id": "det_1", "label": "Triangular Pediment", "type": "architectural_element", "bbox": [0.20, 0.04, 0.60, 0.14], "raw_text": null },
+        { "id": "det_2", "label": "Column Portico", "type": "architectural_element", "bbox": [0.22, 0.20, 0.56, 0.50], "raw_text": null }
+      ]
+    },
+    {
+      "id": "iosefin-brutalist-block",
+      "name": "Communist-era concrete block (generic)",
+      "aliases": [],
+      "district": "Iosefin",
+      "location": null,
+      "scene": "facade",
+      "expected_style": "Brutalist",
+      "acceptable_styles": ["Brutalist"],
+      "image": "images/iosefin-brutalist-block.jpg",
+      "card_svg": "images/iosefin-brutalist-block.svg",
+      "photo": null,
+      "hero": false,
+      "notes": "Generic control; not a specific address.",
+      "metadata": { "architect": null, "built": null, "verified": false },
+      "expected_details": [
+        { "id": "det_1", "label": "Exposed Concrete Grid", "type": "architectural_element", "bbox": [0.10, 0.06, 0.80, 0.70], "raw_text": null }
+      ]
+    },
+    {
+      "id": "negative-tram",
+      "name": "Tram on the street (negative)",
+      "aliases": [],
+      "district": null,
+      "location": null,
+      "scene": "non_building",
+      "expected_style": null,
+      "acceptable_styles": [null],
+      "image": "images/negative-tram.jpg",
+      "card_svg": "images/negative-tram.svg",
+      "photo": null,
+      "hero": false,
+      "notes": "NEGATIVE: not a facade. Correct answer: style null.",
+      "metadata": { "architect": null, "built": null, "verified": true },
+      "expected_details": []
+    },
+    {
+      "id": "negative-park",
+      "name": "Park and trees (negative)",
+      "aliases": [],
+      "district": null,
+      "location": null,
+      "scene": "non_building",
+      "expected_style": null,
+      "acceptable_styles": [null],
+      "image": "images/negative-park.jpg",
+      "card_svg": "images/negative-park.svg",
+      "photo": null,
+      "hero": false,
+      "notes": "NEGATIVE: not a facade. Correct answer: style null.",
+      "metadata": { "architect": null, "built": null, "verified": true },
+      "expected_details": []
+    }
+  ]
+}

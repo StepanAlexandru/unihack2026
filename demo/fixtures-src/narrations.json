@@ -1,0 +1,98 @@
+{
+  "_readme": "Source for demo/fixtures/*.json and demo/offline-cache.json. Edit here, then run `cd backend && npm run build:demo`. Each `text` must be 35-40 words. Only state facts you are confident in; prefer M3's knowledge-base wording once it exists.",
+  "heroes": {
+    "casa-bruck": {
+      "confidence": 0.89,
+      "building_name": "Casa Brück",
+      "en": {
+        "text": "You are looking at Casa Brück on Piața Unirii, designed by László Székely around 1910. Notice the curving lines and plant ornaments: Secession architects used them to give Timișoara's new buildings a bold, modern personality.",
+        "history": "In the early 1900s Timișoara expanded quickly, and Secession buildings like this one transformed the squares of the old Cetate district.",
+        "why_it_matters": "Casa Brück is one of the best-known Secession facades in Timișoara's historic centre."
+      },
+      "ro": {
+        "text": "Priviți Casa Brück din Piața Unirii, proiectată de László Székely în jurul anului 1910. Observați liniile curbe și ornamentele vegetale: arhitecții Secession le foloseau pentru a da noilor clădiri ale Timișoarei o personalitate îndrăzneață și modernă.",
+        "history": "La începutul anilor 1900, Timișoara s-a extins rapid, iar clădiri Secession precum aceasta au transformat piețele vechiului cartier Cetate.",
+        "why_it_matters": "Casa Brück este una dintre cele mai cunoscute fațade Secession din centrul istoric al Timișoarei."
+      }
+    },
+    "palatul-lloyd": {
+      "confidence": 0.82,
+      "building_name": "Palatul Lloyd",
+      "en": {
+        "text": "This is the Lloyd Palace on Piața Victoriei, built between 1910 and 1912 to designs by Lipót Baumhorn. Its facade mixes historic forms with Secession ornament, a typical Eclectic blend that signalled the city's commercial ambitions.",
+        "history": "Piața Victoriei took shape in the early twentieth century, after the old fortress walls came down, and its palaces were built within a few years of each other.",
+        "why_it_matters": "The Lloyd Palace is a landmark of Piața Victoriei, the city's main promenade."
+      },
+      "ro": {
+        "text": "Acesta este Palatul Lloyd din Piața Victoriei, construit între 1910 și 1912 după planurile lui Lipót Baumhorn. Fațada îmbină forme istorice cu ornamente Secession, un amestec eclectic tipic care exprima ambițiile comerciale ale orașului în plină dezvoltare.",
+        "history": "Piața Victoriei s-a conturat la începutul secolului al XX-lea, după demolarea zidurilor vechii cetăți, iar palatele ei au fost ridicate în doar câțiva ani.",
+        "why_it_matters": "Palatul Lloyd este un reper al Pieței Victoriei, principala promenadă a orașului."
+      }
+    },
+    "domul-catolic": {
+      "confidence": 0.93,
+      "building_name": "Domul Romano-Catolic Sfântul Gheorghe",
+      "en": {
+        "text": "This is the Roman Catholic Cathedral of Saint George on Piața Unirii, built between 1736 and 1774. Its Baroque facade, with paired towers, pilasters and sculpted niches, was designed to impress worshippers and inspire a sense of awe.",
+        "history": "The cathedral was built in the decades after Habsburg forces took Timișoara in 1716, when the city was rebuilt as a Baroque fortress town.",
+        "why_it_matters": "It is one of the most important Baroque churches in the region and a symbol of Piața Unirii."
+      },
+      "ro": {
+        "text": "Aceasta este Catedrala Romano-Catolică Sfântul Gheorghe din Piața Unirii, construită între 1736 și 1774. Fațada barocă, cu două turnuri, pilaștri și nișe sculptate, a fost gândită să impresioneze credincioșii și să inspire un sentiment de uimire.",
+        "history": "Catedrala a fost construită în deceniile de după cucerirea Timișoarei de către habsburgi în 1716, când orașul a fost reconstruit ca oraș-cetate baroc.",
+        "why_it_matters": "Este una dintre cele mai importante biserici baroce din regiune și un simbol al Pieței Unirii."
+      }
+    },
+    "baia-neptun": {
+      "confidence": 0.86,
+      "building_name": "Baia Neptun",
+      "en": {
+        "text": "These are the Neptun Baths in the Fabric district, designed by László Székely and opened in the years before the First World War. Look at the roofline and decorative details, a playful Secession take on a public bathhouse.",
+        "history": "Fabric grew as an industrial and commercial district along the Bega, and the city invested in modern public facilities in the early 1900s.",
+        "why_it_matters": "The baths show that Secession style was used not only for homes and palaces but also for everyday civic buildings."
+      },
+      "ro": {
+        "text": "Aceasta este Baia Neptun din cartierul Fabric, proiectată de László Székely și deschisă în anii dinaintea Primului Război Mondial. Priviți acoperișul și detaliile decorative, o interpretare jucăușă, în stil Secession, a unei clădiri de băi publice.",
+        "history": "Fabric s-a dezvoltat ca un cartier industrial și comercial de-a lungul Begăi, iar orașul a investit în dotări publice moderne la începutul anilor 1900.",
+        "why_it_matters": "Baia arată că stilul Secession a fost folosit nu doar pentru locuințe și palate, ci și pentru clădiri publice de zi cu zi."
+      }
+    },
+    "sinagoga-fabric": {
+      "confidence": 0.84,
+      "building_name": "Sinagoga din Fabric",
+      "en": {
+        "text": "This is the Fabric Synagogue, completed in 1899 to designs by Lipót Baumhorn. Its facade combines Moorish-inspired arches and decoration with historic European forms, a typical Eclectic mix that was popular at the end of the nineteenth century.",
+        "history": "Baumhorn designed many synagogues across the former Kingdom of Hungary, and this one served the Jewish community of the Fabric district.",
+        "why_it_matters": "It is a major landmark of Fabric and of Timișoara's multicultural heritage."
+      },
+      "ro": {
+        "text": "Aceasta este Sinagoga din Fabric, finalizată în 1899 după planurile lui Lipót Baumhorn. Fațada îmbină arcade și decorații de inspirație maură cu forme istorice europene, un amestec eclectic tipic, foarte popular la sfârșitul secolului al nouăsprezecelea.",
+        "history": "Baumhorn a proiectat numeroase sinagogi în fostul Regat al Ungariei, iar aceasta a servit comunitatea evreiască din cartierul Fabric.",
+        "why_it_matters": "Este un reper important al cartierului Fabric și al moștenirii multiculturale a Timișoarei."
+      }
+    },
+    "palatul-baroc": {
+      "confidence": 0.9,
+      "building_name": "Palatul Baroc",
+      "en": {
+        "text": "This is the Baroque Palace on Piața Unirii, today home to the National Museum of Art. Notice the rhythm of tall windows and the decorated portal, typical of the Baroque public buildings of eighteenth-century Habsburg Timișoara.",
+        "history": "After 1716 the Habsburg administration rebuilt Timișoara in stone, and palaces like this one framed the new Baroque squares.",
+        "why_it_matters": "It is a key part of the Baroque ensemble of Piața Unirii."
+      },
+      "ro": {
+        "text": "Acesta este Palatul Baroc din Piața Unirii, astăzi sediul Muzeului Național de Artă din Timișoara. Observați ritmul regulat al ferestrelor înalte și portalul bogat decorat, tipice marilor clădiri publice baroce din Timișoara habsburgică a secolului al optsprezecelea.",
+        "history": "După 1716, administrația habsburgică a reconstruit Timișoara din piatră, iar palate precum acesta au încadrat noile piețe baroce.",
+        "why_it_matters": "Este o parte esențială a ansamblului baroc din Piața Unirii."
+      }
+    }
+  },
+  "contract_example": {
+    "_readme": "demo/fixtures/contract-example.<lang>.json: the §6 example verbatim (en) plus its Romanian counterpart.",
+    "ro": {
+      "text": "Această fațadă aparține stilului Secession, care a transformat Timișoara la începutul secolului al douăzecilea. Căutați masca sculptată de deasupra ferestrei: arhitecții Secession foloseau chipuri și motive vegetale curgătoare pentru a da clădirilor personalitate și mândrie civică.",
+      "history": "La începutul anilor 1900, când Timișoara a crescut dincolo de zidurile vechii cetăți, multe clădiri noi de locuințe au adoptat stilul Secession, popular în întreaga Austro-Ungarie.",
+      "why_it_matters": "Fațadele Secession sunt o parte definitorie a identității arhitecturale a Timișoarei.",
+      "translated_det_2": "În anul 1910"
+    }
+  }
+}

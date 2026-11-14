@@ -1,0 +1,53 @@
+{
+  "style": "Secession",
+  "confidence": 0.86,
+  "details": [
+    {
+      "id": "det_1",
+      "label": "Decorative Roofline",
+      "type": "architectural_element",
+      "bbox": [
+        0.14,
+        0.02,
+        0.72,
+        0.14
+      ],
+      "raw_text": null,
+      "translated_text": null
+    },
+    {
+      "id": "det_2",
+      "label": "Arched Entrance",
+      "type": "architectural_element",
+      "bbox": [
+        0.38,
+        0.66,
+        0.24,
+        0.32
+      ],
+      "raw_text": null,
+      "translated_text": null
+    },
+    {
+      "id": "det_3",
+      "label": "Name Inscription",
+      "type": "inscription",
+      "bbox": [
+        0.34,
+        0.56,
+        0.32,
+        0.06
+      ],
+      "raw_text": "NEPTUN FÜRDŐ",
+      "translated_text": "Neptune Baths"
+    }
+  ],
+  "narration": {
+    "text": "These are the Neptun Baths in the Fabric district, designed by László Székely and opened in the years before the First World War. Look at the roofline and decorative details, a playful Secession take on a public bathhouse.",
+    "audio_url": "",
+    "duration_s": 15.2,
+    "building_name": "Baia Neptun",
+    "history": "Fabric grew as an industrial and commercial district along the Bega, and the city invested in modern public facilities in the early 1900s.",
+    "why_it_matters": "The baths show that Secession style was used not only for homes and palaces but also for everyday civic buildings."
+  }
+}
