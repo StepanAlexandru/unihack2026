@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "description": "Synthetic sample set: gradient PNGs plus mock_scenario hints, used to self-test the benchmark pipeline offline (npm run benchmark -- --mock). The ground truth deliberately disagrees with the mock in places (one missed plaque, one style confusion, one OCR error) so every metric is non-trivial. Real accuracy needs real photos in /demo/test-set/manifest.json.",
+  "synthetic": true,
+  "cases": [
+    {
+      "id": "sample_secession",
+      "image": "images/sample_secession.png",
+      "mock_scenario": "secession",
+      "expected": {
+        "style": "Secession",
+        "details": [
+          { "type": "mask", "bbox": [0.33, 0.19, 0.13, 0.15] },
+          { "type": "inscription", "bbox": [0.40, 0.61, 0.22, 0.07], "raw_text": "ANNO 1911" },
+          { "type": "plaque", "bbox": [0.05, 0.80, 0.15, 0.10], "raw_text": "Monument istoric" }
+        ]
+      }
+    },
+    {
+      "id": "sample_baroque",
+      "image": "images/sample_baroque.png",
+      "mock_scenario": "baroque",
+      "expected": {
+        "style": "Baroque",
+        "details": [
+          { "type": "lion_head", "bbox": [0.45, 0.40, 0.08, 0.08] },
+          { "type": "architectural_element", "bbox": [0.30, 0.12, 0.40, 0.10] }
+        ]
+      }
+    },
+    {
+      "id": "sample_low_confidence",
+      "image": "images/sample_low_confidence.png",
+      "mock_scenario": "low_confidence",
+      "expected": {
+        "style": "Eclectic",
+        "details": [{ "type": "guild_symbol", "bbox": [0.30, 0.60, 0.10, 0.10] }]
+      }
+    },
+    {
+      "id": "sample_rejection",
+      "image": "images/sample_rejection.png",
+      "mock_scenario": "no_match",
+      "expected": { "style": null, "details": [] }
+    },
+    {
+      "id": "sample_confusion",
+      "image": "images/sample_confusion.png",
+      "mock_scenario": "baroque",
+      "expected": {
+        "style": "Neoclassical",
+        "details": [{ "type": "architectural_element", "bbox": [0.30, 0.12, 0.40, 0.10] }]
+      }
+    }
+  ]
+}

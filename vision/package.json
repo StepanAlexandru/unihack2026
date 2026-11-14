@@ -1,0 +1,24 @@
+{
+  "name": "heritage-vision",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Module 2: AI Vision. analyzeImage() for the Timișoara heritage scanner (contract: docs/contracts.md §4).",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "engines": {
+    "node": ">=20.12"
+  },
+  "scripts": {
+    "test": "node --test",
+    "benchmark": "node benchmark.js",
+    "try": "node scripts/try.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.8.0",
+    "@google/genai": "^3.3.0",
+    "openai": "^7.57.0"
+  }
+}
